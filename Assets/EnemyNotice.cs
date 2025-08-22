@@ -61,8 +61,8 @@ public class EnemySight : MonoBehaviour
         // Move toward the current patrol target
         transform.position += (Vector3)direction * patrolSpeed * Time.deltaTime;
 
-        // Flip enemy sprite to face direction
-        FlipSprite(direction);
+        // Flip to face the player (instead of patrol point)
+        FacePlayer();
 
         // If close enough to target, switch patrol point
         if (Vector2.Distance(transform.position, currentTarget.position) < 0.2f)
@@ -81,17 +81,20 @@ public class EnemySight : MonoBehaviour
             transform.position += (Vector3)direction * chaseSpeed * Time.deltaTime;
         }
 
-        // Flip sprite to face player
-        FlipSprite(direction);
+        // Always face the player while chasing
+        FacePlayer();
     }
 
-    // Handles flipping the sprite left/right safely
-    void FlipSprite(Vector2 direction)
+    // Makes enemy face the player's position
+    void FacePlayer()
     {
-        if (direction.x != 0) // only flip if moving horizontally
+        if (player != null)
         {
             Vector3 localScale = transform.localScale;
-            localScale.x = (direction.x > 0) ? Mathf.Abs(localScale.x) : -Mathf.Abs(localScale.x);
+            if (player.position.x > transform.position.x)
+                localScale.x = Mathf.Abs(localScale.x); // face right
+            else
+                localScale.x = -Mathf.Abs(localScale.x); // face left
             transform.localScale = localScale;
         }
     }
