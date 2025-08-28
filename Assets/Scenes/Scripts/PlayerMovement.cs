@@ -2,97 +2,92 @@ using UnityEngine;
 
 public class PlayerMovement : MonoBehaviour
 {
-    public float moveSpeed = 5f;
-    public float jumpForce = 10f;
-    public float wallJumpForce = 8f;
-    public float wallSlideSpeed = 2f;
-    public LayerMask groundLayer;
-    public LayerMask wallLayer;
-    public Transform groundCheck;
-    public Transform wallCheck;
-
+    [SerializeField] private float speed;
+    [SerializeField] private float jumpPower;
+    [SerializeField] private LayerMask groundLayer;
+    [SerializeField] private LayerMask wallLayer;
+    private Rigidbody2D body;
     private Animator anim;
-    private Rigidbody2D rb;
-    private bool isGrounded;
-    private bool isTouchingWall;
-    private bool isWallSliding;
-    private SpriteRenderer spriteRenderer;
+    private BoxCollider2D boxCollider;
+    private float wallJumpCooldown;
+    private float horizontalInput;
 
-    void Start()
+    private void Awake()
     {
+        //Grab references for rigidbody and animator from object
+        body = GetComponent<Rigidbody2D>();
         anim = GetComponent<Animator>();
-        rb = GetComponent<Rigidbody2D>();
-        spriteRenderer = GetComponent<SpriteRenderer>();
-
-        if (rb == null)
-            Debug.LogError("Rigidbody2D component not found on this GameObject!");
-
-        if (groundCheck == null || wallCheck == null)
-            Debug.LogError("groundCheck or wallCheck Transform not assigned!");
-
-        if (spriteRenderer == null)
-            Debug.LogError("SpriteRenderer component not found on this GameObject!");
+        boxCollider = GetComponent<BoxCollider2D>();
     }
 
-    void Update()
+    private void Update()
     {
-        // Check if the player is grounded or touching a wall
-        isGrounded = Physics2D.OverlapCircle(groundCheck.position, 0.2f, groundLayer);
-        isTouchingWall = Physics2D.OverlapCircle(wallCheck.position, 0.2f, wallLayer);
+        horizontalInput = Input.GetAxis("Horizontal");
 
-        float horizontalInput = Input.GetAxisRaw("Horizontal");
+        //Flip player when moving left-right
+        if (horizontalInput > 0.01f)
+            transform.localScale = new Vector3(5,5,1);
+        else if (horizontalInput < -0.01f)
+            transform.localScale = new Vector3(-5, 5, 1);
 
-        // Wall sliding logic
-        if (isTouchingWall && !isGrounded && rb.velocity.y < 0)
+        //Set animator parameters
+        anim.SetBool("run", horizontalInput != 0);
+        anim.SetBool("grounded", isGrounded());
+
+        //Wall jump logic
+        if (wallJumpCooldown > 0.2f)
         {
-            isWallSliding = true;
-            rb.velocity = new Vector2(rb.velocity.x, Mathf.Clamp(rb.velocity.y, -wallSlideSpeed, float.MaxValue));
+            body.velocity = new Vector2(horizontalInput * speed, body.velocity.y);
+
+            if (onWall() && !isGrounded())
+            {
+                body.gravityScale = 0;
+                body.velocity = Vector2.zero;
+            }
+            else
+                body.gravityScale = 7;
+
+            if (Input.GetKey(KeyCode.Space))
+                Jump();
         }
         else
-        {
-            isWallSliding = false;
-        }
-
-        // Running animation
-        anim.SetBool("run", horizontalInput != 0);
-
-        // Move the player
-        rb.velocity = new Vector2(horizontalInput * moveSpeed, rb.velocity.y);
-
-        // Jump logic (only allows jumping if grounded or touching a wall)
-        if ((isGrounded || isTouchingWall) && Input.GetButtonDown("Jump"))
-        {
-            if (isGrounded)
-            {
-                // Normal jump
-                rb.velocity = new Vector2(rb.velocity.x, jumpForce);
-            }
-            else if (isTouchingWall)
-            {
-                // Wall jump
-                float wallJumpDirection = (transform.position.x < wallCheck.position.x) ? -1 : 1;
-                rb.velocity = new Vector2(wallJumpDirection * wallJumpForce, jumpForce);
-            }
-        }
-
-        // Flip character sprite
-        if (horizontalInput > 0)
-            spriteRenderer.flipX = false;
-        else if (horizontalInput < 0)
-            spriteRenderer.flipX = true;
+            wallJumpCooldown += Time.deltaTime;
     }
 
-    private void OnDrawGizmosSelected()
+    private void Jump()
     {
-        if (groundCheck != null)
+        if (isGrounded())
         {
-            Gizmos.color = Color.yellow;
-            Gizmos.DrawWireSphere(groundCheck.position, 0.2f);
+            body.velocity = new Vector2(body.velocity.x, jumpPower);
+            anim.SetTrigger("jump");
         }
-        if (wallCheck != null)
+        else if (onWall() && !isGrounded())
         {
-            Gizmos.color = Color.blue;
-            Gizmos.DrawWireSphere(wallCheck.position, 0.2f);
+            if (horizontalInput == 0)
+            {
+                body.velocity = new Vector2(-Mathf.Sign(transform.localScale.x) * 10, 0);
+                transform.localScale = new Vector3(-Mathf.Sign(transform.localScale.x), transform.localScale.y, transform.localScale.z);
+            }
+            else
+                body.velocity = new Vector2(-Mathf.Sign(transform.localScale.x) * 3, 6);
+
+            wallJumpCooldown = 0;
         }
+    }
+
+
+    private bool isGrounded()
+    {
+        RaycastHit2D raycastHit = Physics2D.BoxCast(boxCollider.bounds.center, boxCollider.bounds.size, 0, Vector2.down, 0.1f, groundLayer);
+        return raycastHit.collider != null;
+    }
+    private bool onWall()
+    {
+        RaycastHit2D raycastHit = Physics2D.BoxCast(boxCollider.bounds.center, boxCollider.bounds.size, 0, new Vector2(transform.localScale.x, 0), 0.1f, wallLayer);
+        return raycastHit.collider != null;
+    }
+    public bool canAttack()
+    {
+        return horizontalInput == 0 && isGrounded() && !onWall();
     }
 }

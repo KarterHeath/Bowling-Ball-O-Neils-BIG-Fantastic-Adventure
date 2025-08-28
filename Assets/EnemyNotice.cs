@@ -19,7 +19,7 @@ public class EnemySight : MonoBehaviour
     private Transform currentTarget;
 
     // Tracking player detection
-    private bool playerNoticed = false;
+    private bool playerNoticed = true;
 
     void Start()
     {
