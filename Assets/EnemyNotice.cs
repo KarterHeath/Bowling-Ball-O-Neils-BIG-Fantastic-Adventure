@@ -1,51 +1,49 @@
 using UnityEngine;
 
-public class EnemySight : MonoBehaviour
+public class EnemyAI : MonoBehaviour
 {
+    // Patrol points
+    public Transform pointA;
+    public Transform pointB;
+
     // Reference to the player
     public Transform player;
 
-    // Enemy movement speeds
-    public float patrolSpeed = 2f;
-    public float chaseSpeed = 3.5f;
+    // Movement settings
+    public float speed = 2f;
+    public float chaseSpeed = 3f;
+    public float detectionRange = 5f;
 
-    // Vision settings
-    public float visionRange = 5f;
-    public float stopDistance = 1f;
-
-    // Patrol settings
-    public Transform pointA;   // First patrol point
-    public Transform pointB;   // Second patrol point
-    private Transform currentTarget;
-
-    // Tracking player detection
-    private bool playerNoticed = true;
+    // Private variables
+    private Vector3 targetPoint;
+    private bool chasing = false;
+    private bool facingRight = true; // Keep track of enemy's facing direction
 
     void Start()
     {
-        // Start patrolling between pointA and pointB
-        currentTarget = pointA;
+        // Start by going to point A
+        targetPoint = pointA.position;
     }
 
     void Update()
     {
-        // Check distance between enemy and player
         float distanceToPlayer = Vector2.Distance(transform.position, player.position);
 
-        // If player is within vision range, notice them
-        if (distanceToPlayer <= visionRange)
+        // If player is close enough, start chasing
+        if (distanceToPlayer <= detectionRange)
         {
-            playerNoticed = true;
+            chasing = true;
         }
-        else
+        else if (chasing && distanceToPlayer > detectionRange + 1f)
         {
-            playerNoticed = false;
+            // If player gets far away, stop chasing and return to patrol
+            chasing = false;
+            targetPoint = pointA.position; // Reset patrol
         }
 
-        // Decide behavior: chase OR patrol
-        if (playerNoticed)
+        if (chasing)
         {
-            ChasePlayer(distanceToPlayer);
+            ChasePlayer();
         }
         else
         {
@@ -53,63 +51,49 @@ public class EnemySight : MonoBehaviour
         }
     }
 
-    // Patrols between point A and point B
     void Patrol()
     {
-        Vector2 direction = (currentTarget.position - transform.position).normalized;
+        // Move towards the patrol target
+        transform.position = Vector2.MoveTowards(transform.position, targetPoint, speed * Time.deltaTime);
 
-        // Move toward the current patrol target
-        transform.position += (Vector3)direction * patrolSpeed * Time.deltaTime;
-
-        // Flip to face the player (instead of patrol point)
-        FacePlayer();
-
-        // If close enough to target, switch patrol point
-        if (Vector2.Distance(transform.position, currentTarget.position) < 0.2f)
+        // Switch target point when reached
+        if (Vector2.Distance(transform.position, targetPoint) < 0.2f)
         {
-            currentTarget = (currentTarget == pointA) ? pointB : pointA;
-        }
-    }
-
-    // Chases the player until within stopping distance
-    void ChasePlayer(float distanceToPlayer)
-    {
-        Vector2 direction = (player.position - transform.position).normalized;
-
-        if (distanceToPlayer > stopDistance)
-        {
-            transform.position += (Vector3)direction * chaseSpeed * Time.deltaTime;
-        }
-
-        // Always face the player while chasing
-        FacePlayer();
-    }
-
-    // Makes enemy face the player's position
-    void FacePlayer()
-    {
-        if (player != null)
-        {
-            Vector3 localScale = transform.localScale;
-            if (player.position.x > transform.position.x)
-                localScale.x = Mathf.Abs(localScale.x); // face right
+            if (targetPoint == pointA.position)
+                targetPoint = pointB.position;
             else
-                localScale.x = -Mathf.Abs(localScale.x); // face left
-            transform.localScale = localScale;
+                targetPoint = pointA.position;
+        }
+
+        FaceTarget(targetPoint);
+    }
+
+    void ChasePlayer()
+    {
+        // Move toward the player
+        transform.position = Vector2.MoveTowards(transform.position, player.position, chaseSpeed * Time.deltaTime);
+        FaceTarget(player.position);
+    }
+
+    void FaceTarget(Vector3 target)
+    {
+        // If target is to the right and enemy not facing right, flip
+        if (target.x > transform.position.x && !facingRight)
+        {
+            Flip();
+        }
+        // If target is to the left and enemy is facing right, flip
+        else if (target.x < transform.position.x && facingRight)
+        {
+            Flip();
         }
     }
 
-    // Draw vision range in the Scene view for debugging
-    void OnDrawGizmosSelected()
+    void Flip()
     {
-        Gizmos.color = Color.red;
-        Gizmos.DrawWireSphere(transform.position, visionRange);
-
-        // Draw patrol path
-        if (pointA != null && pointB != null)
-        {
-            Gizmos.color = Color.green;
-            Gizmos.DrawLine(pointA.position, pointB.position);
-        }
+        facingRight = !facingRight;
+        Vector3 scale = transform.localScale;
+        scale.x *= -1; // Just flip X
+        transform.localScale = scale;
     }
 }
