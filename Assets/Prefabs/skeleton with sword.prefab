@@ -70,9 +70,6 @@ PrefabInstance:
     m_AddedComponents:
     - targetCorrespondingSourceObject: {fileID: -8653719598885068355, guid: 8889158ec959514479a7036c66a835a6, type: 3}
       insertIndex: -1
-      addedObject: {fileID: 5956192608949389471}
-    - targetCorrespondingSourceObject: {fileID: -8653719598885068355, guid: 8889158ec959514479a7036c66a835a6, type: 3}
-      insertIndex: -1
       addedObject: {fileID: 6658940533726631212}
     - targetCorrespondingSourceObject: {fileID: -8653719598885068355, guid: 8889158ec959514479a7036c66a835a6, type: 3}
       insertIndex: -1
@@ -86,25 +83,6 @@ GameObject:
   m_CorrespondingSourceObject: {fileID: -8653719598885068355, guid: 8889158ec959514479a7036c66a835a6, type: 3}
   m_PrefabInstance: {fileID: 6492089109699589397}
   m_PrefabAsset: {fileID: 0}
---- !u!114 &5956192608949389471
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 6773210953284441256}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 0cbe30b19fb6d9a4495f5126da9d52b9, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  player: {fileID: 0}
-  patrolSpeed: 2
-  chaseSpeed: 3
-  visionRange: 3
-  stopDistance: 1
-  pointA: {fileID: 0}
-  pointB: {fileID: 0}
 --- !u!61 &6658940533726631212
 BoxCollider2D:
   m_ObjectHideFlags: 0
