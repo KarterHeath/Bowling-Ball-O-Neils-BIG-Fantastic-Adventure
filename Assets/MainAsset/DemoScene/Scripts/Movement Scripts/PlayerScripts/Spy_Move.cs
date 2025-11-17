@@ -33,7 +33,7 @@ public class Spy_Move : MonoBehaviour {
 
 	// Update is called once per frame
 	void Update () {
-		anim.SetFloat ("Speed", Mathf.Abs(rigid.velocity.x));
+		anim.SetFloat ("Speed", Mathf.Abs(rigid.linearVelocity.x));
 		anim.SetBool ("touchingGround", grounded);
 
 		Move.Motion(Speed, Jump, rigid, grounded, Scout,sprite);

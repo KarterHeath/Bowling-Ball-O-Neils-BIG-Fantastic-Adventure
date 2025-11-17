@@ -25,16 +25,16 @@ public class Movement : MonoBehaviour{
 
 		if (Input.GetKeyDown (jumpKey)) {
 			if(grounded){
-			rdbdy.velocity = new Vector2 ( rdbdy.velocity.x, jump);
+			rdbdy.linearVelocity = new Vector2 ( rdbdy.linearVelocity.x, jump);
 			}
 
 			if (grounded && isScout) {
-				rdbdy.velocity = new Vector2 (rdbdy.velocity.x, jump);
+				rdbdy.linearVelocity = new Vector2 (rdbdy.linearVelocity.x, jump);
 				canDoubleJump = true;
 			} else {
 				if(canDoubleJump){
 					canDoubleJump = false;
-					rdbdy.velocity = new Vector2 (rdbdy.velocity.x, (jump - 1));
+					rdbdy.linearVelocity = new Vector2 (rdbdy.linearVelocity.x, (jump - 1));
 				}
 			
 			}
@@ -45,14 +45,14 @@ public class Movement : MonoBehaviour{
 				sprite.localScale = new Vector3 (sprite.localScale.x * -1, sprite.localScale.y, sprite.localScale.z);
 			}
 			facingRight = false;
-			rdbdy.velocity = new Vector2 (-speed,  rdbdy.velocity.y);
+			rdbdy.linearVelocity = new Vector2 (-speed,  rdbdy.linearVelocity.y);
 		}
 		if (Input.GetKey (rightKey)) {
 			if(sprite.localScale.x < 1){
 				sprite.localScale = new Vector3 (sprite.localScale.x * -1, sprite.localScale.y, sprite.localScale.z);
 			}
 			facingRight = true;
-			rdbdy.velocity = new Vector2 (speed, rdbdy.velocity.y);
+			rdbdy.linearVelocity = new Vector2 (speed, rdbdy.linearVelocity.y);
 		}
 	}
 
