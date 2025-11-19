@@ -1,101 +1,73 @@
 using UnityEngine;
 
-public class EnemyAI : MonoBehaviour
+public class EnemyPatrol : MonoBehaviour
 {
-    // Patrol points
-    public Transform pointA;
-    public Transform pointB;
+    [Header("Patrol Points")]
+    [SerializeField] private Transform leftEdge;
+    [SerializeField] private Transform rightEdge;
 
-    // Reference to the player
-    public Transform player;
+    [Header("Enemy")]
+    [SerializeField] private Transform enemy;
 
-    // Movement settings
-    public float speed = 2f;
-    public float chaseSpeed = 3f;
-    public float detectionRange = 5f;
-    [SerializeField] private float attackCooldown;
+    [Header("Movement parameters")]
+    [SerializeField] private float speed;
+    private Vector3 initScale;
+    private bool movingLeft;
 
-    // Private variables
-    private Vector3 targetPoint;
-    private bool chasing = false;
-    private bool facingRight = true; // Keep track of enemy's facing direction
+    [Header("Idle Behaviour")]
+    [SerializeField] private float idleDuration;
+    private float idleTimer;
 
-    void Start()
+    [Header("Enemy Animator")]
+    [SerializeField] private Animator anim;
+
+    private void Awake()
     {
-        // Start by going to point A
-        targetPoint = pointA.position;
+        initScale = enemy.localScale;
+    }
+    private void OnDisable()
+    {
+        anim.SetBool("moving", false);
     }
 
-    void Update()
+    private void Update()
     {
-        float distanceToPlayer = Vector2.Distance(transform.position, player.position);
-
-        // If player is close enough, start chasing
-        if (distanceToPlayer <= detectionRange)
+        if (movingLeft)
         {
-            chasing = true;
-        }
-        else if (chasing && distanceToPlayer > detectionRange + 1f)
-        {
-            // If player gets far away, stop chasing and return to patrol
-            chasing = false;
-            targetPoint = pointA.position; // Reset patrol
-        }
-
-        if (chasing)
-        {
-            ChasePlayer();
+            if (enemy.position.x >= leftEdge.position.x)
+                MoveInDirection(-1);
+            else
+                DirectionChange();
         }
         else
         {
-            Patrol();
-        }
-    }
-
-    void Patrol()
-    {
-        // Move towards the patrol target
-        transform.position = Vector2.MoveTowards(transform.position, targetPoint, speed * Time.deltaTime);
-
-        // Switch target point when reached
-        if (Vector2.Distance(transform.position, targetPoint) < 0.2f)
-        {
-            if (targetPoint == pointA.position)
-                targetPoint = pointB.position;
+            if (enemy.position.x <= rightEdge.position.x)
+                MoveInDirection(1);
             else
-                targetPoint = pointA.position;
-        }
-
-        FaceTarget(targetPoint);
-    }
-
-    void ChasePlayer()
-    {
-        // Move toward the player
-        transform.position = Vector2.MoveTowards(transform.position, player.position, chaseSpeed * Time.deltaTime);
-        FaceTarget(player.position);
-    }
-
-    void FaceTarget(Vector3 target)
-    {
-        // If target is to the right and enemy not facing right, flip
-        if (target.x > transform.position.x && !facingRight)
-        {
-            Flip();
-        }
-        // If target is to the left and enemy is facing right, flip
-        else if (target.x < transform.position.x && facingRight)
-        {
-            Flip();
+                DirectionChange();
         }
     }
 
-    void Flip()
+    private void DirectionChange()
     {
-        facingRight = !facingRight;
-        Vector3 scale = transform.localScale;
-        scale.x *= -1; // Just flip X
-        transform.localScale = scale;
-    } 
-    
+        anim.SetBool("moving", false);
+        idleTimer += Time.deltaTime;
+
+        if (idleTimer > idleDuration)
+            movingLeft = !movingLeft;
+    }
+
+    private void MoveInDirection(int _direction)
+    {
+        idleTimer = 0;
+        anim.SetBool("moving", true);
+
+        //Make enemy face direction
+        enemy.localScale = new Vector3(Mathf.Abs(initScale.x) * _direction,
+            initScale.y, initScale.z);
+
+        //Move in that direction
+        enemy.position = new Vector3(enemy.position.x + Time.deltaTime * _direction * speed,
+            enemy.position.y, enemy.position.z);
+    }
 }
