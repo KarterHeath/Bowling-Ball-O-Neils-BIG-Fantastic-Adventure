@@ -18,12 +18,12 @@ public class MeleeEnemy : MonoBehaviour
     //References
     private Animator anim;
     private Health playerHealth;
-    private EnemyPatrol enemyPatrol;
+    private EnemyAI enemyPatrol;
 
     private void Awake()
     {
         anim = GetComponent<Animator>();
-        enemyPatrol = GetComponentInParent<EnemyPatrol>();
+        enemyPatrol = GetComponentInParent<EnemyAI>();
     }
 
     private void Update()

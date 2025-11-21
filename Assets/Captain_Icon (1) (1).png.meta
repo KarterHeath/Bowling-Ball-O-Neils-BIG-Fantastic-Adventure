@@ -1,73 +1,49 @@
 fileFormatVersion: 2
-guid: b06f925f9843bce4487ba8cd85985f3f
+guid: 84727ac768bef0347966114c00f485ba
 TextureImporter:
   internalIDToNameTable:
   - first:
-      213: -499709731133755034
-    second: Captain_Icon (1)_0
+      213: -8424407661699217504
+    second: Captain_Icon (1) (1)_0
   - first:
-      213: 7112005517026928110
-    second: Captain_Icon (1)_1
+      213: 8783082975927185596
+    second: Captain_Icon (1) (1)_1
   - first:
-      213: -750763671646912030
-    second: Captain_Icon (1)_2
+      213: 4725031276047013122
+    second: Captain_Icon (1) (1)_2
   - first:
-      213: 4264019366137317971
-    second: Captain_Icon (1)_3
+      213: -1168635430075060116
+    second: Captain_Icon (1) (1)_3
   - first:
-      213: 8693749098400494201
-    second: Captain_Icon (1)_4
+      213: 7128301657232318845
+    second: Captain_Icon (1) (1)_4
   - first:
-      213: 4567828029629950229
-    second: Captain_Icon (1)_5
+      213: -4523003041594065088
+    second: Captain_Icon (1) (1)_5
   - first:
-      213: -4917186388303760736
-    second: Captain_Icon (1)_6
+      213: -2201672603951953946
+    second: Captain_Icon (1) (1)_6
   - first:
-      213: 3849668004140846996
-    second: Captain_Icon (1)_7
+      213: 3558439805674134992
+    second: Captain_Icon (1) (1)_7
   - first:
-      213: -4458729521127538312
-    second: Captain_Icon (1)_8
+      213: -2603979809709029566
+    second: Captain_Icon (1) (1)_8
   - first:
-      213: -3575015101231760198
-    second: Captain_Icon (1)_9
+      213: -6942531197900676248
+    second: Captain_Icon (1) (1)_9
   - first:
-      213: -3520789141531726113
-    second: Captain_Icon (1)_10
+      213: 6497993022772304043
+    second: Captain_Icon (1) (1)_10
   - first:
-      213: -6751150258097361040
-    second: Captain_Icon (1)_11
+      213: 1402502859830192750
+    second: Captain_Icon (1) (1)_11
   - first:
-      213: 2405113520055793695
-    second: Captain_Icon (1)_12
+      213: 3036596292531281853
+    second: Captain_Icon (1) (1)_12
   - first:
-      213: -7831265921284820054
-    second: Captain_Icon (1)_13
-  - first:
-      213: 8598928437356310009
-    second: Captain_Icon (1)_14
-  - first:
-      213: 3450934661939715576
-    second: Captain_Icon (1)_15
-  - first:
-      213: -6026900417451967225
-    second: Captain_Icon (1)_16
-  - first:
-      213: 197913904359453178
-    second: Captain_Icon (1)_17
-  - first:
-      213: -5693068725396862803
-    second: Captain_Icon (1)_18
-  - first:
-      213: 3981903321176805122
-    second: Captain_Icon (1)_19
-  - first:
-      213: -1512432963890625095
-    second: Captain_Icon (1)_20
-  - first:
-      213: 1670854428931323632
-    second: Captain_Icon (1)_21
+      213: -5225061070560206478
+    second: Captain_Icon (1) (1)_13
   externalObjects: {}
   serializedVersion: 13
   mipmaps:
@@ -100,7 +76,7 @@ TextureImporter:
   maxTextureSize: 2048
   textureSettings:
     serializedVersion: 2
-    filterMode: 1
+    filterMode: 0
     aniso: 1
     mipBias: 0
     wrapU: 1
@@ -202,13 +178,13 @@ TextureImporter:
     serializedVersion: 2
     sprites:
     - serializedVersion: 2
-      name: Captain_Icon (1)_0
+      name: Captain_Icon (1) (1)_0
       rect:
         serializedVersion: 2
         x: 0
-        y: 130
-        width: 50
-        height: 65
+        y: 44
+        width: 16
+        height: 21
       alignment: 0
       pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -217,20 +193,20 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: -1
       bones: []
-      spriteID: 66177f8a5aca019f0800000000000000
-      internalID: -499709731133755034
+      spriteID: 0a7c659bddd761b80800000000000000
+      internalID: -8424407661699217504
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: Captain_Icon (1)_1
+      name: Captain_Icon (1) (1)_1
       rect:
         serializedVersion: 2
-        x: 50
-        y: 130
-        width: 50
-        height: 65
+        x: 16
+        y: 44
+        width: 16
+        height: 21
       alignment: 0
       pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -239,20 +215,20 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: -1
       bones: []
-      spriteID: ee52203365be2b260800000000000000
-      internalID: 7112005517026928110
+      spriteID: cb0bbec8e67c3e970800000000000000
+      internalID: 8783082975927185596
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: Captain_Icon (1)_2
+      name: Captain_Icon (1) (1)_2
       rect:
         serializedVersion: 2
-        x: 100
-        y: 130
-        width: 50
-        height: 65
+        x: 32
+        y: 44
+        width: 16
+        height: 21
       alignment: 0
       pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -261,20 +237,20 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: -1
       bones: []
-      spriteID: 2e1c7391b60c495f0800000000000000
-      internalID: -750763671646912030
+      spriteID: 205946949eea29140800000000000000
+      internalID: 4725031276047013122
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: Captain_Icon (1)_3
+      name: Captain_Icon (1) (1)_3
       rect:
         serializedVersion: 2
         x: 0
-        y: 65
-        width: 50
-        height: 65
+        y: 23
+        width: 16
+        height: 21
       alignment: 0
       pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -283,20 +259,20 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: -1
       bones: []
-      spriteID: 35a40029507dc2b30800000000000000
-      internalID: 4264019366137317971
+      spriteID: c60b07e944c28cfe0800000000000000
+      internalID: -1168635430075060116
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: Captain_Icon (1)_4
+      name: Captain_Icon (1) (1)_4
       rect:
         serializedVersion: 2
-        x: 50
-        y: 65
-        width: 50
-        height: 65
+        x: 16
+        y: 23
+        width: 16
+        height: 21
       alignment: 0
       pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -305,20 +281,20 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: -1
       bones: []
-      spriteID: 972b8885eb666a870800000000000000
-      internalID: 8693749098400494201
+      spriteID: d7129230790dce260800000000000000
+      internalID: 7128301657232318845
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: Captain_Icon (1)_5
+      name: Captain_Icon (1) (1)_5
       rect:
         serializedVersion: 2
-        x: 100
-        y: 65
-        width: 50
-        height: 65
+        x: 32
+        y: 23
+        width: 16
+        height: 21
       alignment: 0
       pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -327,20 +303,20 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: -1
       bones: []
-      spriteID: 5196a2d346f246f30800000000000000
-      internalID: 4567828029629950229
+      spriteID: 04f36c392b01b31c0800000000000000
+      internalID: -4523003041594065088
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: Captain_Icon (1)_6
+      name: Captain_Icon (1) (1)_6
       rect:
         serializedVersion: 2
         x: 0
         y: 0
-        width: 50
-        height: 65
+        width: 16
+        height: 23
       alignment: 0
       pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -349,20 +325,20 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: -1
       bones: []
-      spriteID: 0a2b4ce3805a2cbb0800000000000000
-      internalID: -4917186388303760736
+      spriteID: 6e70cb18e661271e0800000000000000
+      internalID: -2201672603951953946
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: Captain_Icon (1)_7
+      name: Captain_Icon (1) (1)_7
       rect:
         serializedVersion: 2
-        x: 50
+        x: 16
         y: 0
-        width: 50
-        height: 65
+        width: 16
+        height: 23
       alignment: 0
       pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -371,20 +347,20 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: -1
       bones: []
-      spriteID: 49f800247a4cc6530800000000000000
-      internalID: 3849668004140846996
+      spriteID: 0dd11db562e126130800000000000000
+      internalID: 3558439805674134992
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: Captain_Icon (1)_8
+      name: Captain_Icon (1) (1)_8
       rect:
         serializedVersion: 2
-        x: 100
+        x: 32
         y: 0
-        width: 50
-        height: 65
+        width: 16
+        height: 23
       alignment: 0
       pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -393,8 +369,8 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: -1
       bones: []
-      spriteID: 87145a7bf196f12c0800000000000000
-      internalID: -4458729521127538312
+      spriteID: 2470108d82eccdbd0800000000000000
+      internalID: -2603979809709029566
       vertices: []
       indices: 
       edges: []
@@ -403,7 +379,7 @@ TextureImporter:
     customData: 
     physicsShape: []
     bones: []
-    spriteID: a6e9974e3320a2e43a4e19898ac3d629
+    spriteID: 287a299a4c370554c8f4ec727684fcc6
     internalID: 0
     vertices: []
     indices: 
@@ -413,17 +389,17 @@ TextureImporter:
     spriteCustomMetadata:
       entries:
       - key: SpriteEditor.SliceSettings
-        value: '{"sliceOnImport":false,"gridCellCount":{"x":3.0,"y":3.0},"gridSpriteSize":{"x":50.0,"y":65.0},"gridSpriteOffset":{"x":0.0,"y":0.0},"gridSpritePadding":{"x":0.0,"y":0.0},"pivot":{"x":0.5,"y":0.5},"pivotPixels":{"x":0.0,"y":0.0},"autoSlicingMethod":0,"spriteAlignment":0,"pivotUnitMode":0,"slicingType":2,"keepEmptyRects":false,"isAlternate":false}'
+        value: '{"sliceOnImport":false,"gridCellCount":{"x":3.0,"y":3.0},"gridSpriteSize":{"x":16.0,"y":21.0},"gridSpriteOffset":{"x":0.0,"y":0.0},"gridSpritePadding":{"x":0.0,"y":0.0},"pivot":{"x":0.5,"y":0.5},"pivotPixels":{"x":0.0,"y":0.0},"autoSlicingMethod":0,"spriteAlignment":0,"pivotUnitMode":0,"slicingType":2,"keepEmptyRects":false,"isAlternate":false}'
     nameFileIdTable:
-      Captain_Icon (1)_0: -499709731133755034
-      Captain_Icon (1)_1: 7112005517026928110
-      Captain_Icon (1)_2: -750763671646912030
-      Captain_Icon (1)_3: 4264019366137317971
-      Captain_Icon (1)_4: 8693749098400494201
-      Captain_Icon (1)_5: 4567828029629950229
-      Captain_Icon (1)_6: -4917186388303760736
-      Captain_Icon (1)_7: 3849668004140846996
-      Captain_Icon (1)_8: -4458729521127538312
+      Captain_Icon (1) (1)_0: -8424407661699217504
+      Captain_Icon (1) (1)_1: 8783082975927185596
+      Captain_Icon (1) (1)_2: 4725031276047013122
+      Captain_Icon (1) (1)_3: -1168635430075060116
+      Captain_Icon (1) (1)_4: 7128301657232318845
+      Captain_Icon (1) (1)_5: -4523003041594065088
+      Captain_Icon (1) (1)_6: -2201672603951953946
+      Captain_Icon (1) (1)_7: 3558439805674134992
+      Captain_Icon (1) (1)_8: -2603979809709029566
   mipmapLimitGroupName: 
   pSDRemoveMatte: 0
   userData: 
