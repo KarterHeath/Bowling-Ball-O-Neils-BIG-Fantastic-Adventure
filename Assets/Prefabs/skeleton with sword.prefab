@@ -239,16 +239,11 @@ PrefabInstance:
       addedObject: {fileID: 4100690853946959390}
     - targetCorrespondingSourceObject: {fileID: -8653719598885068355, guid: 8889158ec959514479a7036c66a835a6, type: 3}
       insertIndex: -1
-      addedObject: {fileID: 3677506259224178758}
+      addedObject: {fileID: 1190816286861061068}
     - targetCorrespondingSourceObject: {fileID: -8653719598885068355, guid: 8889158ec959514479a7036c66a835a6, type: 3}
       insertIndex: -1
-      addedObject: {fileID: 1190816286861061068}
+      addedObject: {fileID: 4707987887669893554}
   m_SourcePrefab: {fileID: 4843985084834002234, guid: 8889158ec959514479a7036c66a835a6, type: 3}
---- !u!4 &5564019962026560715 stripped
-Transform:
-  m_CorrespondingSourceObject: {fileID: -7552582706839291426, guid: 8889158ec959514479a7036c66a835a6, type: 3}
-  m_PrefabInstance: {fileID: 6492089109699589397}
-  m_PrefabAsset: {fileID: 0}
 --- !u!1 &6773210953284441256 stripped
 GameObject:
   m_CorrespondingSourceObject: {fileID: -8653719598885068355, guid: 8889158ec959514479a7036c66a835a6, type: 3}
@@ -349,24 +344,6 @@ Animator:
   m_AllowConstantClipSamplingOptimization: 1
   m_KeepAnimatorStateOnDisable: 0
   m_WriteDefaultValuesOnDisable: 0
---- !u!114 &3677506259224178758
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 6773210953284441256}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 0cbe30b19fb6d9a4495f5126da9d52b9, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: Assembly-CSharp::EnemyAI
-  leftEdge: {fileID: 0}
-  rightEdge: {fileID: 0}
-  enemy: {fileID: 5564019962026560715}
-  speed: 2
-  idleDuration: 2
-  anim: {fileID: 4100690853946959390}
 --- !u!114 &1190816286861061068
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -381,9 +358,28 @@ MonoBehaviour:
   m_EditorClassIdentifier: Assembly-CSharp::MeleeEnemy
   attackCooldown: 1
   range: 2
-  damage: 5
-  colliderDistance: 0
+  damage: 1
+  colliderDistance: 1
   boxCollider: {fileID: 6658940533726631212}
   playerLayer:
     serializedVersion: 2
     m_Bits: 512
+--- !u!114 &4707987887669893554
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 6773210953284441256}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 0cbe30b19fb6d9a4495f5126da9d52b9, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: Assembly-CSharp::EnemyAI
+  pointA: {fileID: 0}
+  pointB: {fileID: 0}
+  player: {fileID: 0}
+  speed: 2
+  chaseSpeed: 3
+  detectionRange: 5
+  attackCooldown: 2

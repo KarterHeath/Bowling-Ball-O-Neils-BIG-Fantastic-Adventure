@@ -8,6 +8,7 @@ public class Health : MonoBehaviour
     public float currentHealth { get; private set; }
     private Animator anim;
     private bool dead;
+  
 
     [Header("iFrames")]
     [SerializeField] private float iFramesDuration;
@@ -15,13 +16,14 @@ public class Health : MonoBehaviour
     private SpriteRenderer spriteRend;
 
     [Header("Components")]
-    [SerializeField] private Behaviour[] components;
+    private PlayerMovement playerMovement;
     private bool invulnerable;
 
     private void Awake()
     {
         currentHealth = startingHealth;
         anim = GetComponent<Animator>();
+        playerMovement = GetComponent<PlayerMovement>();
         spriteRend = GetComponent<SpriteRenderer>();
     }
     public void TakeDamage(float _damage)
@@ -41,8 +43,9 @@ public class Health : MonoBehaviour
                 anim.SetTrigger("die");
 
                 //Deactivate all attached component classes
-                foreach (Behaviour component in components)
-                    component.enabled = false;
+                
+
+                    playerMovement.enabled = false;
 
                 dead = true;
             }
