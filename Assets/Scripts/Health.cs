@@ -44,9 +44,16 @@ public class Health : MonoBehaviour
 
                 //Deactivate all attached component classes
                 
+                //Player
+                if(GetComponent<PlayerMovement>() != null)   
+                playerMovement.enabled = false;
 
-                    playerMovement.enabled = false;
-
+                //Enemy
+                if (GetComponent<MeleeEnemy>() != null)
+                {
+                    GetComponentInParent<EnemyAI>().enabled = false;
+                    GetComponent<MeleeEnemy>().enabled = false;
+                }
                 dead = true;
             }
         }

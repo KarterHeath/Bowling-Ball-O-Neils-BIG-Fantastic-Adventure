@@ -13,7 +13,7 @@ public class EnemyAI : MonoBehaviour
     public float speed = 2f;
     public float chaseSpeed = 3f;
     public float detectionRange = 5f;
-    [SerializeField] private float attackCooldown;
+   
 
     // Private variables
     private Vector3 targetPoint;

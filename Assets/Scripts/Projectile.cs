@@ -47,6 +47,9 @@ public class Projectile : MonoBehaviour
         hit = true;                        // Mark as hit
         boxCollider.enabled = false;       // Disable collider so it doesn't hit multiple times
         anim.SetTrigger("explode");        // Play explosion animation
+
+        if (collision.tag == "Enemy")
+            collision.GetComponent<Health>().TakeDamage(1);
     }
 
     public void SetDirection(float _direction)

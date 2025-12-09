@@ -66,7 +66,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: -7552582706839291426, guid: 8889158ec959514479a7036c66a835a6, type: 3}
       propertyPath: m_LocalPosition.x
-      value: -0.047
+      value: 8.38
       objectReference: {fileID: 0}
     - target: {fileID: -7552582706839291426, guid: 8889158ec959514479a7036c66a835a6, type: 3}
       propertyPath: m_LocalPosition.y
@@ -123,6 +123,10 @@ PrefabInstance:
     - target: {fileID: -4639269537421361062, guid: 8889158ec959514479a7036c66a835a6, type: 3}
       propertyPath: m_Layer
       value: 8
+      objectReference: {fileID: 0}
+    - target: {fileID: -4639269537421361062, guid: 8889158ec959514479a7036c66a835a6, type: 3}
+      propertyPath: m_TagString
+      value: Untagged
       objectReference: {fileID: 0}
     - target: {fileID: -4606121860663893156, guid: 8889158ec959514479a7036c66a835a6, type: 3}
       propertyPath: m_Layer
@@ -243,6 +247,9 @@ PrefabInstance:
     - targetCorrespondingSourceObject: {fileID: -8653719598885068355, guid: 8889158ec959514479a7036c66a835a6, type: 3}
       insertIndex: -1
       addedObject: {fileID: 4707987887669893554}
+    - targetCorrespondingSourceObject: {fileID: -8653719598885068355, guid: 8889158ec959514479a7036c66a835a6, type: 3}
+      insertIndex: -1
+      addedObject: {fileID: 3289521229002562966}
   m_SourcePrefab: {fileID: 4843985084834002234, guid: 8889158ec959514479a7036c66a835a6, type: 3}
 --- !u!1 &6773210953284441256 stripped
 GameObject:
@@ -356,7 +363,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 859fe5453c3b14748b0ea3fc288e8b71, type: 3}
   m_Name: 
   m_EditorClassIdentifier: Assembly-CSharp::MeleeEnemy
-  attackCooldown: 1
+  attackCooldown: 4
   range: 2
   damage: 1
   colliderDistance: 1
@@ -380,6 +387,20 @@ MonoBehaviour:
   pointB: {fileID: 0}
   player: {fileID: 0}
   speed: 2
-  chaseSpeed: 3
+  chaseSpeed: 5
   detectionRange: 5
-  attackCooldown: 2
+--- !u!114 &3289521229002562966
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 6773210953284441256}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 2b47776628d1dfb49af59fd968f1a6ac, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: Assembly-CSharp::Health
+  startingHealth: 1
+  iFramesDuration: 0
+  numberOfFlashes: 0
