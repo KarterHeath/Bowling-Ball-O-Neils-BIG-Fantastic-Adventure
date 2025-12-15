@@ -3,12 +3,16 @@ using UnityEngine;
 public class PlayAudioOnApproach : MonoBehaviour
 {
     [Header("Settings")]
-    public Transform player;            // Drag the player here
-    public float triggerDistance = 3f;  // Distance to trigger audio
-    public bool playOnce = true;        // Should the audio play only once?
+    public Transform player;
+    public float triggerDistance = 3f;
+    public bool playOnce = true;
 
     [Header("Audio")]
-    public AudioSource audioSource;     // Drag an AudioSource component here
+    public AudioSource audioSource;
+
+    [Header("Animation")]
+    public Animator characterAnimator;   // Drag your Animator here
+    public string animationTriggerName = "Talk"; // Name of trigger in Animator
 
     private bool hasPlayed = false;
 
@@ -16,16 +20,20 @@ public class PlayAudioOnApproach : MonoBehaviour
     {
         if (player == null || audioSource == null) return;
 
-        // Calculate distance from player to this object
         float distance = Vector3.Distance(player.position, transform.position);
 
-        // If close enough, play audio
         if (distance <= triggerDistance)
         {
             if (!audioSource.isPlaying && (!playOnce || !hasPlayed))
             {
                 audioSource.Play();
                 hasPlayed = true;
+
+                // Trigger animation when audio starts
+                if (characterAnimator != null && !string.IsNullOrEmpty(animationTriggerName))
+                {
+                    characterAnimator.SetTrigger(animationTriggerName);
+                }
             }
         }
     }
