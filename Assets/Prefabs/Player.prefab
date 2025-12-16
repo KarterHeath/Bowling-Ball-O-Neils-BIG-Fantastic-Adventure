@@ -9,7 +9,7 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 8487387030356920309}
-  m_Layer: 0
+  m_Layer: 9
   m_Name: GroundCheck
   m_TagString: Ground
   m_Icon: {fileID: 0}
@@ -46,7 +46,8 @@ GameObject:
   - component: {fileID: 4846475197738765800}
   - component: {fileID: 8852106469653617052}
   - component: {fileID: 6280406641584206096}
-  m_Layer: 0
+  - component: {fileID: 1190130835908142046}
+  m_Layer: 9
   m_Name: Player
   m_TagString: Player
   m_Icon: {fileID: 0}
@@ -259,16 +260,31 @@ MonoBehaviour:
   attackCooldown: 1
   firePoint: {fileID: 5237242492621471160}
   fireballs:
-  - {fileID: 2534971870915035554, guid: 9cb3b61bbe8372544abc9133190a9de7, type: 3}
-  - {fileID: 2534971870915035554, guid: 9cb3b61bbe8372544abc9133190a9de7, type: 3}
-  - {fileID: 2534971870915035554, guid: 9cb3b61bbe8372544abc9133190a9de7, type: 3}
-  - {fileID: 2534971870915035554, guid: 9cb3b61bbe8372544abc9133190a9de7, type: 3}
-  - {fileID: 2534971870915035554, guid: 9cb3b61bbe8372544abc9133190a9de7, type: 3}
-  - {fileID: 2534971870915035554, guid: 9cb3b61bbe8372544abc9133190a9de7, type: 3}
-  - {fileID: 2534971870915035554, guid: 9cb3b61bbe8372544abc9133190a9de7, type: 3}
-  - {fileID: 2534971870915035554, guid: 9cb3b61bbe8372544abc9133190a9de7, type: 3}
-  - {fileID: 2534971870915035554, guid: 9cb3b61bbe8372544abc9133190a9de7, type: 3}
-  - {fileID: 2534971870915035554, guid: 9cb3b61bbe8372544abc9133190a9de7, type: 3}
+  - {fileID: 0}
+  - {fileID: 0}
+  - {fileID: 0}
+  - {fileID: 0}
+  - {fileID: 0}
+  - {fileID: 0}
+  - {fileID: 0}
+  - {fileID: 0}
+  - {fileID: 0}
+  - {fileID: 0}
+--- !u!114 &1190130835908142046
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 3244354299824875552}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 2b47776628d1dfb49af59fd968f1a6ac, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: Assembly-CSharp::Health
+  startingHealth: 3
+  iFramesDuration: 3
+  numberOfFlashes: 3
 --- !u!1 &5245227111346525627
 GameObject:
   m_ObjectHideFlags: 0
@@ -278,7 +294,7 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 5581111653365624846}
-  m_Layer: 0
+  m_Layer: 9
   m_Name: Wall Check
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -309,7 +325,7 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 5237242492621471160}
-  m_Layer: 0
+  m_Layer: 9
   m_Name: FirePoint
   m_TagString: Untagged
   m_Icon: {fileID: -5442936267250999957, guid: 0000000000000000d000000000000000, type: 0}
