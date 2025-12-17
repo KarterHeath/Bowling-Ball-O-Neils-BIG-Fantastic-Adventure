@@ -66,11 +66,11 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: -7552582706839291426, guid: 8889158ec959514479a7036c66a835a6, type: 3}
       propertyPath: m_LocalPosition.x
-      value: 8.38
+      value: 15.901849
       objectReference: {fileID: 0}
     - target: {fileID: -7552582706839291426, guid: 8889158ec959514479a7036c66a835a6, type: 3}
       propertyPath: m_LocalPosition.y
-      value: -3.04
+      value: 6.014873
       objectReference: {fileID: 0}
     - target: {fileID: -7552582706839291426, guid: 8889158ec959514479a7036c66a835a6, type: 3}
       propertyPath: m_LocalPosition.z
@@ -371,6 +371,7 @@ MonoBehaviour:
   playerLayer:
     serializedVersion: 2
     m_Bits: 512
+  attackSound: {fileID: 8300000, guid: 6db0ceb1590d69d4fb57548c07f7a83a, type: 3}
 --- !u!114 &4707987887669893554
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -404,3 +405,4 @@ MonoBehaviour:
   startingHealth: 1
   iFramesDuration: 0
   numberOfFlashes: 0
+  deathSound: {fileID: 8300000, guid: e0a87a172c752b04ea45dfdf6a8420dc, type: 3}

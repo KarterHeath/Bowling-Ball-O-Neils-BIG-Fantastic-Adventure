@@ -19,6 +19,8 @@ public class Health : MonoBehaviour
     private PlayerMovement playerMovement;
     private bool invulnerable;
 
+    [Header("Death Sound")]
+    [SerializeField] private AudioClip deathSound;
     private void Awake()
     {
         currentHealth = startingHealth;
@@ -55,6 +57,7 @@ public class Health : MonoBehaviour
                     GetComponent<MeleeEnemy>().enabled = false;
                 }
                 dead = true;
+                SoundManager.instance.PlaySound(deathSound);
             }
         }
     }

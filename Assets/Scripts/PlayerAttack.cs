@@ -5,6 +5,9 @@ public class PlayerAttack : MonoBehaviour
     // How long the player has to wait before attacking again
     [SerializeField] private float attackCooldown;
 
+    //Audio plays when the bullet is shot.
+    [SerializeField] private AudioClip fireballSound;
+
     // The point where projectiles (fireballs) will spawn from
     [SerializeField] private Transform firePoint;
 
@@ -37,6 +40,7 @@ public class PlayerAttack : MonoBehaviour
 
         // Increase cooldown timer with the time passed since last frame
         cooldownTimer += Time.deltaTime;
+        
     }
 
     private void Attack()
@@ -52,6 +56,7 @@ public class PlayerAttack : MonoBehaviour
 
         // Set fireball direction based on player's facing direction
         fireballs[FindFireball()].GetComponent<Projectile>().SetDirection(Mathf.Sign(transform.localScale.x));
+        SoundManager.instance.PlaySound(fireballSound);
     }
 
     private int FindFireball()
