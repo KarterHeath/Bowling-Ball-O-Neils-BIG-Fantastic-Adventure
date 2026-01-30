@@ -64,7 +64,7 @@ Transform:
   serializedVersion: 2
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
   m_LocalPosition: {x: 2.78, y: 0.5801, z: 0}
-  m_LocalScale: {x: 5, y: 5, z: 1}
+  m_LocalScale: {x: 8, y: 8, z: 1}
   m_ConstrainProportionsScale: 0
   m_Children:
   - {fileID: 5237242492621471160}
@@ -258,6 +258,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   attackCooldown: 1
+  fireballSound: {fileID: 8300000, guid: ca436dcc60170544da90512927667ed9, type: 3}
   firePoint: {fileID: 5237242492621471160}
   fireballs:
   - {fileID: 0}
@@ -285,6 +286,7 @@ MonoBehaviour:
   startingHealth: 3
   iFramesDuration: 3
   numberOfFlashes: 3
+  deathSound: {fileID: 8300000, guid: caae737662cc8bb40b626239a1c84548, type: 3}
 --- !u!1 &5245227111346525627
 GameObject:
   m_ObjectHideFlags: 0

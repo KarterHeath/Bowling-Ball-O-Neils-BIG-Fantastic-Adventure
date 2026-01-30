@@ -1,4 +1,5 @@
 using UnityEngine;
+using UnityEngine.InputSystem;
 
 public class PlayerAttack : MonoBehaviour
 {
@@ -23,6 +24,8 @@ public class PlayerAttack : MonoBehaviour
     // Timer to keep track of attack cooldown
     private float cooldownTimer = Mathf.Infinity;
 
+    private bool isFiring;
+
     private void Awake()
     {
         // Get references to Animator and PlayerMovement components on the same GameObject
@@ -34,7 +37,7 @@ public class PlayerAttack : MonoBehaviour
     {
         // Check for left mouse button click, if attack cooldown has passed, 
         // and if player is allowed to attack
-        if (Input.GetMouseButton(0) && cooldownTimer > attackCooldown && playerMovement.canAttack())
+        if (isFiring && cooldownTimer > attackCooldown && playerMovement.CanAttack())
 
             Attack();
 
@@ -42,7 +45,10 @@ public class PlayerAttack : MonoBehaviour
         cooldownTimer += Time.deltaTime;
         
     }
-
+    public void OnFire(InputValue inputValue)
+    {
+        isFiring = inputValue.isPressed;
+    }
     private void Attack()
     {
         // Trigger the attack animation
@@ -56,7 +62,7 @@ public class PlayerAttack : MonoBehaviour
 
         // Set fireball direction based on player's facing direction
         fireballs[FindFireball()].GetComponent<Projectile>().SetDirection(Mathf.Sign(transform.localScale.x));
-        SoundManager.instance.PlaySound(fireballSound);
+        SoundManager.instance?.PlaySound(fireballSound);
     }
 
     private int FindFireball()

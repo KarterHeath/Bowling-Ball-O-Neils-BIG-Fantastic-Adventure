@@ -57,7 +57,7 @@ public class Health : MonoBehaviour
                     GetComponent<MeleeEnemy>().enabled = false;
                 }
                 dead = true;
-                SoundManager.instance.PlaySound(deathSound);
+                SoundManager.instance?.PlaySound(deathSound);
             }
         }
     }
