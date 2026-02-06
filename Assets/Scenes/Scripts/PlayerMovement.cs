@@ -1,6 +1,7 @@
 using UnityEngine;
 using UnityEngine.AI;
 using UnityEngine.InputSystem;
+using System;
 public class PlayerMovement : MonoBehaviour
 {
     [SerializeField] private float speed;
@@ -98,5 +99,15 @@ public class PlayerMovement : MonoBehaviour
     public bool CanAttack()
     {
         return horizontalInput == 0 && IsGrounded() && !OnWall();
+    }
+
+    public void MoveInput(Vector2 virtualMoveDirection)
+    {
+        horizontalInput = virtualMoveDirection.x;
+    }
+
+    public void JumpInput(bool virtualJumpState)
+    {
+        isJumping=virtualJumpState;
     }
 }

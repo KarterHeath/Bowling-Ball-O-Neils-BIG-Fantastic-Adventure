@@ -1,3 +1,4 @@
+using System;
 using UnityEngine;
 using UnityEngine.InputSystem;
 
@@ -43,7 +44,7 @@ public class PlayerAttack : MonoBehaviour
 
         // Increase cooldown timer with the time passed since last frame
         cooldownTimer += Time.deltaTime;
-        
+
     }
     public void OnFire(InputValue inputValue)
     {
@@ -77,5 +78,11 @@ public class PlayerAttack : MonoBehaviour
 
         // If all fireballs are active, default to first one in the array
         return 0;
+    }
+
+
+    public void FireInput(bool virtualFireState)
+    {
+       isFiring = virtualFireState;
     }
 }
