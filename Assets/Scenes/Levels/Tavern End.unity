@@ -134,7 +134,7 @@ GameObject:
   m_Component:
   - component: {fileID: 350543863}
   - component: {fileID: 350543862}
-  m_Layer: 0
+  m_Layer: 7
   m_Name: GameObject (1)
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -212,7 +212,7 @@ GameObject:
   m_Component:
   - component: {fileID: 620509046}
   - component: {fileID: 620509045}
-  m_Layer: 0
+  m_Layer: 7
   m_Name: GameObject (3)
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -709,7 +709,7 @@ GameObject:
   m_Component:
   - component: {fileID: 1653277461}
   - component: {fileID: 1653277460}
-  m_Layer: 0
+  m_Layer: 7
   m_Name: GameObject (2)
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -902,6 +902,63 @@ Transform:
   m_Children: []
   m_Father: {fileID: 0}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!1001 &1856957097
+PrefabInstance:
+  m_ObjectHideFlags: 0
+  serializedVersion: 2
+  m_Modification:
+    serializedVersion: 3
+    m_TransformParent: {fileID: 0}
+    m_Modifications:
+    - target: {fileID: 807611751893235035, guid: 0f929ae06e1dc584398028d5b7d91496, type: 3}
+      propertyPath: m_Name
+      value: Crazy Fred (1)_0
+      objectReference: {fileID: 0}
+    - target: {fileID: 1753174682836364630, guid: 0f929ae06e1dc584398028d5b7d91496, type: 3}
+      propertyPath: m_LocalPosition.x
+      value: -9.466956
+      objectReference: {fileID: 0}
+    - target: {fileID: 1753174682836364630, guid: 0f929ae06e1dc584398028d5b7d91496, type: 3}
+      propertyPath: m_LocalPosition.y
+      value: -10.176762
+      objectReference: {fileID: 0}
+    - target: {fileID: 1753174682836364630, guid: 0f929ae06e1dc584398028d5b7d91496, type: 3}
+      propertyPath: m_LocalPosition.z
+      value: -0.93
+      objectReference: {fileID: 0}
+    - target: {fileID: 1753174682836364630, guid: 0f929ae06e1dc584398028d5b7d91496, type: 3}
+      propertyPath: m_LocalRotation.w
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 1753174682836364630, guid: 0f929ae06e1dc584398028d5b7d91496, type: 3}
+      propertyPath: m_LocalRotation.x
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 1753174682836364630, guid: 0f929ae06e1dc584398028d5b7d91496, type: 3}
+      propertyPath: m_LocalRotation.y
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 1753174682836364630, guid: 0f929ae06e1dc584398028d5b7d91496, type: 3}
+      propertyPath: m_LocalRotation.z
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 1753174682836364630, guid: 0f929ae06e1dc584398028d5b7d91496, type: 3}
+      propertyPath: m_LocalEulerAnglesHint.x
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 1753174682836364630, guid: 0f929ae06e1dc584398028d5b7d91496, type: 3}
+      propertyPath: m_LocalEulerAnglesHint.y
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 1753174682836364630, guid: 0f929ae06e1dc584398028d5b7d91496, type: 3}
+      propertyPath: m_LocalEulerAnglesHint.z
+      value: 0
+      objectReference: {fileID: 0}
+    m_RemovedComponents: []
+    m_RemovedGameObjects: []
+    m_AddedGameObjects: []
+    m_AddedComponents: []
+  m_SourcePrefab: {fileID: 100100000, guid: 0f929ae06e1dc584398028d5b7d91496, type: 3}
 --- !u!1 &2060293395
 GameObject:
   m_ObjectHideFlags: 0
@@ -957,9 +1014,9 @@ GameObject:
   - component: {fileID: 2092024907}
   - component: {fileID: 2092024906}
   - component: {fileID: 2092024905}
-  m_Layer: 0
+  m_Layer: 6
   m_Name: image_0
-  m_TagString: Untagged
+  m_TagString: Ground
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -976,7 +1033,7 @@ AreaEffector2D:
   m_UseColliderMask: 1
   m_ColliderMask:
     serializedVersion: 2
-    m_Bits: 4294967295
+    m_Bits: 64
   m_UseGlobalAngle: 0
   m_ForceAngle: 0
   m_ForceMagnitude: 10
@@ -1052,7 +1109,7 @@ Transform:
   m_GameObject: {fileID: 2092024904}
   serializedVersion: 2
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: -2.7149, y: -12.11, z: 1.97}
+  m_LocalPosition: {x: -2.69, y: -12.14, z: 1.97}
   m_LocalScale: {x: 1.0188491, y: 1.0188491, z: 1.0188491}
   m_ConstrainProportionsScale: 0
   m_Children: []
@@ -1068,7 +1125,7 @@ GameObject:
   m_Component:
   - component: {fileID: 2115502458}
   - component: {fileID: 2115502457}
-  m_Layer: 0
+  m_Layer: 7
   m_Name: GameObject (4)
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -1149,3 +1206,4 @@ SceneRoots:
   - {fileID: 1653277461}
   - {fileID: 620509046}
   - {fileID: 2115502458}
+  - {fileID: 1856957097}
