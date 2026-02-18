@@ -4,71 +4,57 @@ using System.Collections;
 public class Health : MonoBehaviour
 {
     [Header("Health")]
-    [SerializeField] private float startingHealth;
-    public float currentHealth { get; private set; }
-    private Animator anim;
-    private bool dead;
-  
+    [SerializeField] protected float startingHealth;
+    public float currentHealth { get; protected set; }
+    protected bool dead;
 
     [Header("iFrames")]
-    [SerializeField] private float iFramesDuration;
-    [SerializeField] private int numberOfFlashes;
-    private SpriteRenderer spriteRend;
+    [SerializeField] protected float iFramesDuration;
+    [SerializeField] protected int numberOfFlashes;
 
-    [Header("Components")]
-    private PlayerMovement playerMovement;
-    private bool invulnerable;
+    protected Animator anim;
+    protected SpriteRenderer spriteRend;
+    protected bool invulnerable;
 
-    [Header("Death Sound")]
-    [SerializeField] private AudioClip deathSound;
-    private void Awake()
+    protected virtual void Awake()
     {
         currentHealth = startingHealth;
         anim = GetComponent<Animator>();
-        playerMovement = GetComponent<PlayerMovement>();
         spriteRend = GetComponent<SpriteRenderer>();
     }
-    public void TakeDamage(float _damage)
+
+    public virtual void TakeDamage(float damage)
     {
-        if (invulnerable) return;
-        currentHealth = Mathf.Clamp(currentHealth - _damage, 0, startingHealth);
+        if (invulnerable || dead) return;
+
+        currentHealth = Mathf.Clamp(currentHealth - damage, 0, startingHealth);
 
         if (currentHealth > 0)
         {
             anim.SetTrigger("hurt");
-            StartCoroutine(Invunerability());
+            StartCoroutine(Invulnerability());
         }
         else
         {
-            if (!dead)
-            {
-                anim.SetTrigger("die");
-
-                //Deactivate all attached component classes
-                
-                //Player
-                if(GetComponent<PlayerMovement>() != null)   
-                playerMovement.enabled = false;
-
-                //Enemy
-                if (GetComponent<MeleeEnemy>() != null)
-                {
-                    GetComponentInParent<EnemyAI>().enabled = false;
-                    GetComponent<MeleeEnemy>().enabled = false;
-                }
-                dead = true;
-                SoundManager.instance?.PlaySound(deathSound);
-            }
+            Die();
         }
     }
-    public void AddHealth(float _value)
+
+    protected virtual void Die()
     {
-        currentHealth = Mathf.Clamp(currentHealth + _value, 0, startingHealth);
+        dead = true;
+        anim.SetTrigger("die");
     }
-    private IEnumerator Invunerability()
+
+    public void AddHealth(float value)
+    {
+        currentHealth = Mathf.Clamp(currentHealth + value, 0, startingHealth);
+    }
+
+    protected IEnumerator Invulnerability()
     {
         invulnerable = true;
-        Physics2D.IgnoreLayerCollision(10, 11, true);
+
         for (int i = 0; i < numberOfFlashes; i++)
         {
             spriteRend.color = new Color(1, 0, 0, 0.5f);
@@ -76,7 +62,7 @@ public class Health : MonoBehaviour
             spriteRend.color = Color.white;
             yield return new WaitForSeconds(iFramesDuration / (numberOfFlashes * 2));
         }
-        Physics2D.IgnoreLayerCollision(10, 11, false);
+
         invulnerable = false;
     }
 }
