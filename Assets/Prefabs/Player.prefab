@@ -49,6 +49,7 @@ GameObject:
   - component: {fileID: 6368718978714613608}
   - component: {fileID: 7221908624480829257}
   - component: {fileID: 5561036126737994318}
+  - component: {fileID: 4218829093305008434}
   m_Layer: 9
   m_Name: Player
   m_TagString: Player
@@ -121,7 +122,7 @@ SpriteRenderer:
   m_GlobalIlluminationMeshLod: 0
   m_SortingLayerID: 0
   m_SortingLayer: 0
-  m_SortingOrder: 0
+  m_SortingOrder: 1
   m_MaskInteraction: 0
   m_Sprite: {fileID: 21300024, guid: 6fa7150d6e84a0f4d9122fda376c5e15, type: 3}
   m_Color: {r: 1, g: 1, b: 1, a: 1}
@@ -317,7 +318,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: Assembly-CSharp::PlayerFallDeath
   deathY: -8
-  restartDelay: 1.5
+  restartDelay: 3
   isDead: 0
 --- !u!114 &5561036126737994318
 MonoBehaviour:
@@ -335,6 +336,18 @@ MonoBehaviour:
   iFramesDuration: 3
   numberOfFlashes: 3
   deathSound: {fileID: 8300000, guid: caae737662cc8bb40b626239a1c84548, type: 3}
+--- !u!114 &4218829093305008434
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 3244354299824875552}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 37dd5f11bb7153d4cb7eb9437489543c, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: Assembly-CSharp::NextLevelDoor
 --- !u!1 &5245227111346525627
 GameObject:
   m_ObjectHideFlags: 0

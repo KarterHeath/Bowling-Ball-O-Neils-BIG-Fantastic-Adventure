@@ -5,7 +5,7 @@ public class PlayerHealth : Health
 {
     private PlayerMovement playerMovement;
 
-    [Header("Death Sound")]
+    [Header("Death")]
     [SerializeField] private AudioClip deathSound;
 
     protected override void Awake()
@@ -23,7 +23,7 @@ public class PlayerHealth : Health
         if (playerMovement != null)
             playerMovement.enabled = false;
 
-        SoundManager.instance?.PlaySound(deathSound);
+        SoundManager.Instance.PlaySound2D("Die");
 
         // Restart level after short delay
         Invoke(nameof(RestartLevel), 1.5f);

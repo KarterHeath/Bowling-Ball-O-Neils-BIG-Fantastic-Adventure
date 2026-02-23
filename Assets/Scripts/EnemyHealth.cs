@@ -5,6 +5,7 @@ public class EnemyHealth : Health
     protected override void Die()
     {
         if (dead) return;
+        SoundManager.Instance.PlaySound2D("SkeletonDie");
 
         base.Die();
 

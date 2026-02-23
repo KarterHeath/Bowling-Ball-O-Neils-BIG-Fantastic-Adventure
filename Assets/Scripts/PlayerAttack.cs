@@ -1,4 +1,3 @@
-using System;
 using UnityEngine;
 using UnityEngine.InputSystem;
 
@@ -63,7 +62,7 @@ public class PlayerAttack : MonoBehaviour
 
         // Set fireball direction based on player's facing direction
         fireballs[FindFireball()].GetComponent<Projectile>().SetDirection(Mathf.Sign(transform.localScale.x));
-        SoundManager.instance?.PlaySound(fireballSound);
+           SoundManager.Instance.PlaySound2D("Fire");
     }
 
     private int FindFireball()
@@ -83,6 +82,6 @@ public class PlayerAttack : MonoBehaviour
 
     public void FireInput(bool virtualFireState)
     {
-       isFiring = virtualFireState;
+        isFiring = virtualFireState;
     }
 }
