@@ -210,7 +210,7 @@ TextureImporter:
         width: 32
         height: 32
       alignment: 0
-      pivot: {x: 0, y: 0}
+      pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
       customData: 
       outline: []
@@ -232,7 +232,7 @@ TextureImporter:
         width: 32
         height: 32
       alignment: 0
-      pivot: {x: 0, y: 0}
+      pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
       customData: 
       outline: []
@@ -254,7 +254,7 @@ TextureImporter:
         width: 1132
         height: 1182
       alignment: 0
-      pivot: {x: 0, y: 0}
+      pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
       customData: 
       outline: []
@@ -276,7 +276,7 @@ TextureImporter:
         width: 32
         height: 32
       alignment: 0
-      pivot: {x: 0, y: 0}
+      pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
       customData: 
       outline: []
@@ -298,7 +298,7 @@ TextureImporter:
         width: 32
         height: 32
       alignment: 0
-      pivot: {x: 0, y: 0}
+      pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
       customData: 
       outline: []
@@ -312,28 +312,6 @@ TextureImporter:
       edges: []
       weights: []
     - serializedVersion: 2
-      name: BlackBeard DIE_5
-      rect:
-        serializedVersion: 2
-        x: 3299
-        y: 5699
-        width: 802
-        height: 382
-      alignment: 0
-      pivot: {x: 0, y: 0}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      customData: 
-      outline: []
-      physicsShape: []
-      tessellationDetail: -1
-      bones: []
-      spriteID: 4fe6046705cba5310800000000000000
-      internalID: 1394634088391929588
-      vertices: []
-      indices: 
-      edges: []
-      weights: []
-    - serializedVersion: 2
       name: BlackBeard DIE_6
       rect:
         serializedVersion: 2
@@ -342,7 +320,7 @@ TextureImporter:
         width: 32
         height: 32
       alignment: 0
-      pivot: {x: 0, y: 0}
+      pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
       customData: 
       outline: []
@@ -364,7 +342,7 @@ TextureImporter:
         width: 32
         height: 32
       alignment: 0
-      pivot: {x: 0, y: 0}
+      pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
       customData: 
       outline: []
@@ -378,28 +356,6 @@ TextureImporter:
       edges: []
       weights: []
     - serializedVersion: 2
-      name: BlackBeard DIE_8
-      rect:
-        serializedVersion: 2
-        x: 5579
-        y: 5629
-        width: 802
-        height: 382
-      alignment: 0
-      pivot: {x: 0, y: 0}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      customData: 
-      outline: []
-      physicsShape: []
-      tessellationDetail: -1
-      bones: []
-      spriteID: c49dab09c376d4a00800000000000000
-      internalID: 742363023409862988
-      vertices: []
-      indices: 
-      edges: []
-      weights: []
-    - serializedVersion: 2
       name: BlackBeard DIE_9
       rect:
         serializedVersion: 2
@@ -408,7 +364,7 @@ TextureImporter:
         width: 32
         height: 32
       alignment: 0
-      pivot: {x: 0, y: 0}
+      pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
       customData: 
       outline: []
@@ -430,7 +386,7 @@ TextureImporter:
         width: 32
         height: 32
       alignment: 0
-      pivot: {x: 0, y: 0}
+      pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
       customData: 
       outline: []
@@ -449,10 +405,10 @@ TextureImporter:
         serializedVersion: 2
         x: 4609
         y: 4999
-        width: 962
-        height: 942
+        width: 1979
+        height: 1037
       alignment: 0
-      pivot: {x: 0, y: 0}
+      pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
       customData: 
       outline: []
@@ -471,10 +427,10 @@ TextureImporter:
         serializedVersion: 2
         x: 2489
         y: 4919
-        width: 962
-        height: 942
+        width: 1647
+        height: 1409
       alignment: 0
-      pivot: {x: 0, y: 0}
+      pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
       customData: 
       outline: []
@@ -492,11 +448,11 @@ TextureImporter:
       rect:
         serializedVersion: 2
         x: 209
-        y: 2799
-        width: 962
-        height: 942
+        y: 2662
+        width: 1979
+        height: 1442
       alignment: 0
-      pivot: {x: 0, y: 0}
+      pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
       customData: 
       outline: []
@@ -510,37 +466,15 @@ TextureImporter:
       edges: []
       weights: []
     - serializedVersion: 2
-      name: BlackBeard DIE_14
-      rect:
-        serializedVersion: 2
-        x: 1179
-        y: 3429
-        width: 802
-        height: 382
-      alignment: 0
-      pivot: {x: 0, y: 0}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      customData: 
-      outline: []
-      physicsShape: []
-      tessellationDetail: -1
-      bones: []
-      spriteID: eca344e6987b20210800000000000000
-      internalID: 1297801443524491982
-      vertices: []
-      indices: 
-      edges: []
-      weights: []
-    - serializedVersion: 2
       name: BlackBeard DIE_15
       rect:
         serializedVersion: 2
-        x: 2399
+        x: 2338
         y: 2829
-        width: 962
-        height: 942
+        width: 1924
+        height: 1039
       alignment: 0
-      pivot: {x: 0, y: 0}
+      pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
       customData: 
       outline: []
@@ -554,37 +488,15 @@ TextureImporter:
       edges: []
       weights: []
     - serializedVersion: 2
-      name: BlackBeard DIE_16
-      rect:
-        serializedVersion: 2
-        x: 3389
-        y: 3369
-        width: 802
-        height: 382
-      alignment: 0
-      pivot: {x: 0, y: 0}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      customData: 
-      outline: []
-      physicsShape: []
-      tessellationDetail: -1
-      bones: []
-      spriteID: 0e6dfa695c87a8540800000000000000
-      internalID: 5010950325435094752
-      vertices: []
-      indices: 
-      edges: []
-      weights: []
-    - serializedVersion: 2
       name: BlackBeard DIE_17
       rect:
         serializedVersion: 2
-        x: 4909
-        y: 2829
-        width: 632
-        height: 942
+        x: 4357
+        y: 2719
+        width: 2243
+        height: 1323
       alignment: 0
-      pivot: {x: 0, y: 0}
+      pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
       customData: 
       outline: []
@@ -598,59 +510,15 @@ TextureImporter:
       edges: []
       weights: []
     - serializedVersion: 2
-      name: BlackBeard DIE_18
-      rect:
-        serializedVersion: 2
-        x: 5619
-        y: 3089
-        width: 802
-        height: 382
-      alignment: 0
-      pivot: {x: 0, y: 0}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      customData: 
-      outline: []
-      physicsShape: []
-      tessellationDetail: -1
-      bones: []
-      spriteID: 3566c24b726e2dd50800000000000000
-      internalID: 6760719048837457491
-      vertices: []
-      indices: 
-      edges: []
-      weights: []
-    - serializedVersion: 2
-      name: BlackBeard DIE_19
-      rect:
-        serializedVersion: 2
-        x: 4559
-        y: 2769
-        width: 392
-        height: 392
-      alignment: 0
-      pivot: {x: 0, y: 0}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      customData: 
-      outline: []
-      physicsShape: []
-      tessellationDetail: -1
-      bones: []
-      spriteID: 2c284f9823660e970800000000000000
-      internalID: 8782131640621368002
-      vertices: []
-      indices: 
-      edges: []
-      weights: []
-    - serializedVersion: 2
       name: BlackBeard DIE_20
       rect:
         serializedVersion: 2
-        x: 89
-        y: 579
-        width: 1152
-        height: 852
+        x: 20
+        y: 406
+        width: 2594
+        height: 1033
       alignment: 0
-      pivot: {x: 0, y: 0}
+      pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
       customData: 
       outline: []
@@ -663,33 +531,11 @@ TextureImporter:
       indices: 
       edges: []
       weights: []
-    - serializedVersion: 2
-      name: BlackBeard DIE_21
-      rect:
-        serializedVersion: 2
-        x: 1109
-        y: 479
-        width: 782
-        height: 382
-      alignment: 0
-      pivot: {x: 0, y: 0}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      customData: 
-      outline: []
-      physicsShape: []
-      tessellationDetail: -1
-      bones: []
-      spriteID: 79033de2229944710800000000000000
-      internalID: 1676633333382197399
-      vertices: []
-      indices: 
-      edges: []
-      weights: []
     outline: []
     customData: 
     physicsShape: []
     bones: []
-    spriteID: 
+    spriteID: dfa1737996adcdf4084734b392f94dd7
     internalID: 0
     vertices: []
     indices: 
@@ -697,7 +543,9 @@ TextureImporter:
     weights: []
     secondaryTextures: []
     spriteCustomMetadata:
-      entries: []
+      entries:
+      - key: SpriteEditor.SliceSettings
+        value: '{"sliceOnImport":false,"gridCellCount":{"x":1.0,"y":1.0},"gridSpriteSize":{"x":64.0,"y":64.0},"gridSpriteOffset":{"x":0.0,"y":0.0},"gridSpritePadding":{"x":0.0,"y":0.0},"pivot":{"x":0.5,"y":0.5},"pivotPixels":{"x":0.0,"y":0.0},"autoSlicingMethod":0,"spriteAlignment":0,"pivotUnitMode":0,"slicingType":0,"keepEmptyRects":false,"isAlternate":false}'
     nameFileIdTable:
       BlackBeard DIE_0: -5301656230553883305
       BlackBeard DIE_1: 9112490487241485886

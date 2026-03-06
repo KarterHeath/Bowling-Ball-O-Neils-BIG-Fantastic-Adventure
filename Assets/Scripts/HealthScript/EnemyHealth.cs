@@ -21,4 +21,5 @@ public class EnemyHealth : Health
         // Destroy after animation
         Destroy(gameObject, 1.5f);
     }
+
 }

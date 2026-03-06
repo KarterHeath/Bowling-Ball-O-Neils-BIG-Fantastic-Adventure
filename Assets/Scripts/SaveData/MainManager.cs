@@ -1,15 +1,26 @@
+using System;
 using UnityEngine;
+using System.Collections;
+using System.Collections.Generic;
 
+// Start is called before the first frame update
 public class MainManager : MonoBehaviour
 {
     private Player player;
 
     private void Start()
     {
-        player = Player.Instance;
-        LoadPlayerData();
+        try
+        {
+            LoadPlayerData();
+        }
+        catch (Exception e)
+        {
+            Debug.LogError(e);
+    
+        }
     }
-
+    // Update is called once per frame
     public void SavePlayerData()
     {
         SaveSystem.SavePlayer(Player.Instance);

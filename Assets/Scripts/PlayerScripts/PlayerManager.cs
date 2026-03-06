@@ -16,9 +16,5 @@ public class PlayerManager : MonoBehaviour
         SaveSystem.SavePlayer(player);
     }
 
-    // Example method to add points during gameplay
-    public void AddPoints(int amount)
-    {
-        currentPoints += amount;
-    }
+    
 }

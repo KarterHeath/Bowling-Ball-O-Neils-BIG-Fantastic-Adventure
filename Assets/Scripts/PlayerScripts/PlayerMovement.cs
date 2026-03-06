@@ -1,7 +1,5 @@
 using UnityEngine;
-using UnityEngine.AI;
 using UnityEngine.InputSystem;
-using System;
 public class PlayerMovement : MonoBehaviour
 {
     [SerializeField] private float speed;
@@ -58,7 +56,7 @@ public class PlayerMovement : MonoBehaviour
     }
     public void OnMove(InputValue inputValue)
     {
-       horizontalInput=inputValue.Get<Vector2>().x;
+        horizontalInput = inputValue.Get<Vector2>().x;
     }
     public void OnJump(InputValue inputValue)
     {
@@ -108,6 +106,6 @@ public class PlayerMovement : MonoBehaviour
 
     public void JumpInput(bool virtualJumpState)
     {
-        isJumping=virtualJumpState;
+        isJumping = virtualJumpState;
     }
 }
