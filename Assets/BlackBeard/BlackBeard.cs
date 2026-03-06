@@ -111,7 +111,7 @@ public class Blackbeard : MonoBehaviour
             player.position,
             speed * Time.deltaTime
         );
-
+        
         // Use the already defined 'direction' variable for flipping logic
         if ((direction.x > 0 && transform.localScale.x > 0) ||
             (direction.x < 0 && transform.localScale.x < 0))
