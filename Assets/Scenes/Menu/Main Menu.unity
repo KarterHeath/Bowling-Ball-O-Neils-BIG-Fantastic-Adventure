@@ -1998,8 +1998,9 @@ MonoBehaviour:
   - groupID: SkeletonAttack
     clips:
     - {fileID: 8300000, guid: 6db0ceb1590d69d4fb57548c07f7a83a, type: 3}
-  - groupID: 
-    clips: []
+  - groupID: Coin
+    clips:
+    - {fileID: 8300000, guid: cef8a3346ff2892459dd3a93ce0e4d2d, type: 3}
 --- !u!114 &1749904886
 MonoBehaviour:
   m_ObjectHideFlags: 0

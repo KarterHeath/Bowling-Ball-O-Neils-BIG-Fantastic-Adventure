@@ -4448,7 +4448,7 @@ AudioSource:
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1614929967}
-  m_Enabled: 1
+  m_Enabled: 0
   serializedVersion: 4
   OutputAudioMixerGroup: {fileID: 0}
   m_audioClip: {fileID: 0}
@@ -15376,6 +15376,10 @@ PrefabInstance:
     - target: {fileID: 3627723078625672772, guid: ed24afd0ef410ac4e9ba7b5a1561d000, type: 3}
       propertyPath: m_Name
       value: Aging Barrel
+      objectReference: {fileID: 0}
+    - target: {fileID: 3627723078625672772, guid: ed24afd0ef410ac4e9ba7b5a1561d000, type: 3}
+      propertyPath: m_TagString
+      value: Door
       objectReference: {fileID: 0}
     - target: {fileID: 4019676885205528559, guid: ed24afd0ef410ac4e9ba7b5a1561d000, type: 3}
       propertyPath: m_LocalPosition.y

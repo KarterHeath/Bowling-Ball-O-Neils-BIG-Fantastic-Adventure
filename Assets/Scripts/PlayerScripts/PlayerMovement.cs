@@ -12,7 +12,8 @@ public class PlayerMovement : MonoBehaviour
     private float wallJumpCooldown;
     private float horizontalInput;
     private bool isJumping;
-
+  
+  public CoinManager cm;
     private void Awake()
     {
         //Grab references for rigidbody and animator from object
@@ -107,5 +108,14 @@ public class PlayerMovement : MonoBehaviour
     public void JumpInput(bool virtualJumpState)
     {
         isJumping = virtualJumpState;
+    }
+    void OnTriggerEnter2D(Collider2D other)
+    {
+       if (other.gameObject.CompareTag("Coin"))
+        {
+            Destroy(other.gameObject);
+            cm.coinCount++;
+            SoundManager.Instance.PlaySound2D("Coin");
+        }
     }
 }
