@@ -650,6 +650,37 @@ PrefabInstance:
     m_AddedGameObjects: []
     m_AddedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 86d38be4937d1c344b9c7f22912685eb, type: 3}
+--- !u!1 &646990188
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 646990189}
+  m_Layer: 6
+  m_Name: Groundcheck
+  m_TagString: Ground
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!4 &646990189
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 646990188}
+  serializedVersion: 2
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: 6.53, y: -13.229, z: 0}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_ConstrainProportionsScale: 0
+  m_Children: []
+  m_Father: {fileID: 0}
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!1 &690855759 stripped
 GameObject:
   m_CorrespondingSourceObject: {fileID: 957945261016860694, guid: 3b467cda93fd3264fae09300561873f8, type: 3}
@@ -803,6 +834,50 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: d34160853335a90458c95556066d4c0d, type: 3}
   m_Name: 
   m_EditorClassIdentifier: Assembly-CSharp::PlayerHealth
+--- !u!1 &864207274
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 864207276}
+  - component: {fileID: 864207275}
+  m_Layer: 0
+  m_Name: Level 5 Music
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!114 &864207275
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 864207274}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 5969a339bbf6634468b03d3dc9ab4ec7, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: Assembly-CSharp::LoadLevel5
+--- !u!4 &864207276
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 864207274}
+  serializedVersion: 2
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: 51.84853, y: -0.24206, z: 0}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_ConstrainProportionsScale: 0
+  m_Children: []
+  m_Father: {fileID: 0}
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!1001 &887987326
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -2330,7 +2405,11 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 1301436893357532072, guid: ef5945b604235ee43803e5d4d4f2aae0, type: 3}
       propertyPath: m_Layer
-      value: 8
+      value: 6
+      objectReference: {fileID: 0}
+    - target: {fileID: 1473181250763382543, guid: ef5945b604235ee43803e5d4d4f2aae0, type: 3}
+      propertyPath: m_SortingOrder
+      value: 1
       objectReference: {fileID: 0}
     - target: {fileID: 4083653731948475721, guid: ef5945b604235ee43803e5d4d4f2aae0, type: 3}
       propertyPath: m_Layer
@@ -2376,6 +2455,10 @@ PrefabInstance:
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
       objectReference: {fileID: 0}
+    - target: {fileID: 7524134637413043905, guid: ef5945b604235ee43803e5d4d4f2aae0, type: 3}
+      propertyPath: m_Constraints
+      value: 4
+      objectReference: {fileID: 0}
     - target: {fileID: 8353522886826719643, guid: ef5945b604235ee43803e5d4d4f2aae0, type: 3}
       propertyPath: player
       value: 
@@ -2389,6 +2472,10 @@ PrefabInstance:
       value: 
       objectReference: {fileID: 8300000, guid: 104b501677a82c24ca10705f887dd333, type: 3}
     - target: {fileID: 8353522886826719643, guid: ef5945b604235ee43803e5d4d4f2aae0, type: 3}
+      propertyPath: jumpForce
+      value: 7
+      objectReference: {fileID: 0}
+    - target: {fileID: 8353522886826719643, guid: ef5945b604235ee43803e5d4d4f2aae0, type: 3}
       propertyPath: maxHealth
       value: 15
       objectReference: {fileID: 0}
@@ -2397,16 +2484,32 @@ PrefabInstance:
       value: 
       objectReference: {fileID: 8300000, guid: 6db0ceb1590d69d4fb57548c07f7a83a, type: 3}
     - target: {fileID: 8353522886826719643, guid: ef5945b604235ee43803e5d4d4f2aae0, type: 3}
+      propertyPath: attackRange
+      value: 2
+      objectReference: {fileID: 0}
+    - target: {fileID: 8353522886826719643, guid: ef5945b604235ee43803e5d4d4f2aae0, type: 3}
       propertyPath: audioSource
       value: 
       objectReference: {fileID: 124343054}
+    - target: {fileID: 8353522886826719643, guid: ef5945b604235ee43803e5d4d4f2aae0, type: 3}
+      propertyPath: groundCheck
+      value: 
+      objectReference: {fileID: 646990189}
     - target: {fileID: 8353522886826719643, guid: ef5945b604235ee43803e5d4d4f2aae0, type: 3}
       propertyPath: attackDamage
       value: 1
       objectReference: {fileID: 0}
     - target: {fileID: 8353522886826719643, guid: ef5945b604235ee43803e5d4d4f2aae0, type: 3}
+      propertyPath: jumpInterval
+      value: 5
+      objectReference: {fileID: 0}
+    - target: {fileID: 8353522886826719643, guid: ef5945b604235ee43803e5d4d4f2aae0, type: 3}
       propertyPath: detectionRange
       value: 15
+      objectReference: {fileID: 0}
+    - target: {fileID: 8353522886826719643, guid: ef5945b604235ee43803e5d4d4f2aae0, type: 3}
+      propertyPath: groundLayer.m_Bits
+      value: 64
       objectReference: {fileID: 0}
     - target: {fileID: 8353522886826719643, guid: ef5945b604235ee43803e5d4d4f2aae0, type: 3}
       propertyPath: playerLayer.m_Bits
@@ -2459,3 +2562,5 @@ SceneRoots:
   - {fileID: 1791832580}
   - {fileID: 52342892}
   - {fileID: 1991175608}
+  - {fileID: 646990189}
+  - {fileID: 864207276}

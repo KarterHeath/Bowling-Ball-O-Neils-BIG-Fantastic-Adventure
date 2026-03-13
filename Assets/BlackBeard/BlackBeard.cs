@@ -11,6 +11,17 @@ public class Blackbeard : MonoBehaviour
     public float speed = 2f;
     private int destPoint = 0;
 
+    [Header("Jump")]
+    public float jumpForce = 7f;
+    public Transform groundCheck;
+    public float groundCheckRadius = 0.2f;
+    public LayerMask groundLayer;
+    private bool isGrounded;
+
+    [Header("Auto Jump")]
+    public float jumpInterval = 5f;
+    private float nextJumpTime;
+
     [Header("Player Detection")]
     public Transform player;
     public float detectionRange = 6f;
@@ -22,8 +33,6 @@ public class Blackbeard : MonoBehaviour
     private float nextAttackTime;
     public Transform attackPoint;
     public LayerMask playerLayer;
-
-
 
     [Header("Audio")]
     public AudioSource audioSource;
@@ -41,15 +50,25 @@ public class Blackbeard : MonoBehaviour
         rb = GetComponent<Rigidbody2D>();
         animator = GetComponent<Animator>();
 
-
-
         if (audioSource == null)
             audioSource = GetComponent<AudioSource>();
+
+        nextJumpTime = Time.time + jumpInterval;
     }
 
     void Update()
     {
         if (isDead || player == null) return;
+
+        // Ground check
+        isGrounded = Physics2D.OverlapCircle(groundCheck.position, groundCheckRadius, groundLayer);
+
+        // Automatic jump every 5 seconds
+        if (Time.time >= nextJumpTime && isGrounded)
+        {
+            Jump();
+            nextJumpTime = Time.time + jumpInterval;
+        }
 
         float distanceToPlayer = Vector2.Distance(transform.position, player.position);
 
@@ -99,7 +118,7 @@ public class Blackbeard : MonoBehaviour
             Flip();
         }
     }
-    // Fixed Chase Logic
+
     void ChasePlayer()
     {
         animator.SetBool("isAttacking", false);
@@ -111,15 +130,14 @@ public class Blackbeard : MonoBehaviour
             player.position,
             speed * Time.deltaTime
         );
-        
-        // Use the already defined 'direction' variable for flipping logic
+
         if ((direction.x > 0 && transform.localScale.x > 0) ||
             (direction.x < 0 && transform.localScale.x < 0))
         {
             Flip();
         }
     }
-    // Fixed Attack Logic
+
     void TryAttack()
     {
         if (Time.time >= nextAttackTime)
@@ -128,7 +146,7 @@ public class Blackbeard : MonoBehaviour
             StartCoroutine(AttackRoutine());
         }
     }
-    // Improved Attack Routine with Animation Sync
+
     IEnumerator AttackRoutine()
     {
         animator.SetBool("isAttacking", true);
@@ -152,7 +170,12 @@ public class Blackbeard : MonoBehaviour
         animator.SetBool("isAttacking", false);
     }
 
-    //  Fixed & Improved Health System
+    void Jump()
+    {
+        rb.linearVelocity = new Vector2(rb.linearVelocity.x, jumpForce);
+        animator.SetTrigger("Jump");
+    }
+
     public void TakeDamage(int damage)
     {
     }
@@ -190,7 +213,6 @@ public class Blackbeard : MonoBehaviour
         Destroy(gameObject);
     }
 
-    // Fixed Flip
     void Flip()
     {
         Vector3 localScale = transform.localScale;
@@ -208,6 +230,11 @@ public class Blackbeard : MonoBehaviour
 
         Gizmos.color = Color.yellow;
         Gizmos.DrawWireSphere(transform.position, detectionRange);
-    }
 
+        if (groundCheck != null)
+        {
+            Gizmos.color = Color.green;
+            Gizmos.DrawWireSphere(groundCheck.position, groundCheckRadius);
+        }
+    }
 }

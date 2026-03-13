@@ -1360,7 +1360,7 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 1213789959}
-  - component: {fileID: 1213789958}
+  - component: {fileID: 1213789960}
   m_Layer: 0
   m_Name: Player
   m_TagString: Untagged
@@ -1368,7 +1368,22 @@ GameObject:
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
   m_IsActive: 1
---- !u!114 &1213789958
+--- !u!4 &1213789959
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1213789957}
+  serializedVersion: 2
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: 720.1413, y: 474.9553, z: 0}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_ConstrainProportionsScale: 0
+  m_Children: []
+  m_Father: {fileID: 0}
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!114 &1213789960
 MonoBehaviour:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
@@ -1380,17 +1395,48 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 901c61d5586564b4d8eb5555c6679680, type: 3}
   m_Name: 
   m_EditorClassIdentifier: Assembly-CSharp::Player
-  playerName: PlayerName
---- !u!4 &1213789959
+  coins: 0
+--- !u!1 &1352296513
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 1352296515}
+  - component: {fileID: 1352296514}
+  m_Layer: 0
+  m_Name: GameObject
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!114 &1352296514
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1352296513}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 6ac2f26c4f1816048bb7147bb5550b71, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: Assembly-CSharp::CoinManager
+  coinCount: 0
+  coinText: {fileID: 0}
+--- !u!4 &1352296515
 Transform:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 1213789957}
+  m_GameObject: {fileID: 1352296513}
   serializedVersion: 2
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: 720.1413, y: 474.9553, z: 0}
+  m_LocalPosition: {x: 1040.1643, y: 348.15445, z: 0}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_ConstrainProportionsScale: 0
   m_Children: []
@@ -2071,7 +2117,7 @@ MonoBehaviour:
   - trackName: Level3Theme
     clip: {fileID: 8300000, guid: cbf94f6d0581f164b96b5f8569dc9ea5, type: 3}
   - trackName: Level4Theme
-    clip: {fileID: 8300000, guid: 079a057f04a9c124b83d6b7abba55790, type: 3}
+    clip: {fileID: 8300000, guid: 50c528cc38d0ca244922661ae098663c, type: 3}
   - trackName: Level5Theme
     clip: {fileID: 8300000, guid: 788dbd107a849434c850a759b97691a2, type: 3}
 --- !u!114 &1850235338
@@ -2253,3 +2299,4 @@ SceneRoots:
   - {fileID: 1850235339}
   - {fileID: 1749904887}
   - {fileID: 1213789959}
+  - {fileID: 1352296515}

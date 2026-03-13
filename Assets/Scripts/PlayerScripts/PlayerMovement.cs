@@ -1,5 +1,6 @@
 using UnityEngine;
 using UnityEngine.InputSystem;
+using UnityEngine.SceneManagement;
 public class PlayerMovement : MonoBehaviour
 {
     [SerializeField] private float speed;
@@ -11,6 +12,7 @@ public class PlayerMovement : MonoBehaviour
     private BoxCollider2D boxCollider;
     private float wallJumpCooldown;
     private float horizontalInput;
+    private float verticalInput;
     private bool isJumping;
   
   public CoinManager cm;
@@ -39,17 +41,22 @@ public class PlayerMovement : MonoBehaviour
         //Wall jump logic
         if (wallJumpCooldown > 0.2f)
         {
-            body.linearVelocity = new Vector2(horizontalInput * speed, body.linearVelocity.y);
+            if (SceneManager.GetActiveScene().name != "Tavern End")
+                body.linearVelocity = new Vector2(horizontalInput * speed, body.linearVelocity.y);
+            else
+                body.linearVelocity = new Vector2(horizontalInput * speed, verticalInput * speed);
 
             if (OnWall() && !IsGrounded())
             {
                 body.gravityScale = 0;
                 body.linearVelocity = Vector2.zero;
             }
+            else if (SceneManager.GetActiveScene().name == "Tavern End")
+                body.gravityScale = 0;
             else
                 body.gravityScale = 7;
 
-            if (isJumping)
+            if (isJumping && SceneManager.GetActiveScene().name != "Tavern End")
                 Jump();
         }
         else
@@ -58,6 +65,7 @@ public class PlayerMovement : MonoBehaviour
     public void OnMove(InputValue inputValue)
     {
         horizontalInput = inputValue.Get<Vector2>().x;
+        verticalInput = inputValue.Get<Vector2>().y;
     }
     public void OnJump(InputValue inputValue)
     {

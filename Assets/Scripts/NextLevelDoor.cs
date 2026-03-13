@@ -4,6 +4,7 @@ using UnityEngine.InputSystem;
 
 public class NextLevelDoor : MonoBehaviour
 {
+    public CoinManager coinManager; // Reference to CoinManager to access player's coins
     private bool playerInRange = false;
 
     // This function gets called when Interact is pressed
@@ -12,6 +13,8 @@ public class NextLevelDoor : MonoBehaviour
         // Only trigger when button is pressed (not released)
         if (context.isPressed && playerInRange)
         {
+            Player.Instance.coins = coinManager.coinCount; // Update player's coins before saving
+            SaveSystem.SavePlayer(Player.Instance); // Save player data before loading next level
             LoadNextLevel();
         }
     }

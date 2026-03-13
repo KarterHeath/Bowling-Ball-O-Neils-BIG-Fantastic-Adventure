@@ -13,7 +13,7 @@ public class CoinManager : MonoBehaviour
     // Start is called before the first frame update
     void Start()
     {
-
+        coinCount = Player.Instance.coins;
     }
     // Update is called once per frame
     private void Update()
