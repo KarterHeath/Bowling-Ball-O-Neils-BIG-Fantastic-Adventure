@@ -679,10 +679,10 @@ MonoBehaviour:
   m_Transition: 1
   m_Colors:
     m_NormalColor: {r: 1, g: 1, b: 1, a: 1}
-    m_HighlightedColor: {r: 0.9607843, g: 0.9607843, b: 0.9607843, a: 1}
-    m_PressedColor: {r: 0.78431374, g: 0.78431374, b: 0.78431374, a: 1}
-    m_SelectedColor: {r: 0.9607843, g: 0.9607843, b: 0.9607843, a: 1}
-    m_DisabledColor: {r: 0.78431374, g: 0.78431374, b: 0.78431374, a: 0.5019608}
+    m_HighlightedColor: {r: 0.4716981, g: 0.45167318, b: 0.45167318, a: 1}
+    m_PressedColor: {r: 0.9339623, g: 0.4008989, b: 0.4008989, a: 1}
+    m_SelectedColor: {r: 0.9150943, g: 0, b: 0, a: 1}
+    m_DisabledColor: {r: 0, g: 0, b: 0, a: 0.5019608}
     m_ColorMultiplier: 1
     m_FadeDuration: 0.1
   m_SpriteState:
@@ -697,20 +697,20 @@ MonoBehaviour:
     m_SelectedTrigger: Selected
     m_DisabledTrigger: Disabled
   m_Interactable: 1
-  m_TargetGraphic: {fileID: 358906319}
+  m_TargetGraphic: {fileID: 2047887746}
   m_FillRect: {fileID: 615955375}
   m_HandleRect: {fileID: 358906318}
   m_Direction: 0
   m_MinValue: -80
   m_MaxValue: 10
   m_WholeNumbers: 0
-  m_Value: 0
+  m_Value: 10
   m_OnValueChanged:
     m_PersistentCalls:
       m_Calls:
-      - m_Target: {fileID: 1465991656}
+      - m_Target: {fileID: 0}
         m_TargetAssemblyTypeName: MainMenu, Assembly-CSharp
-        m_MethodName: UpdateMusicVolume
+        m_MethodName: 
         m_Mode: 0
         m_Arguments:
           m_ObjectArgument: {fileID: 0}
@@ -1746,7 +1746,6 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: e57679a84919825479fa554bcc2a7cda, type: 3}
   m_Name: 
   m_EditorClassIdentifier: Assembly-CSharp::MainMenu
-  audioMixer: {fileID: 0}
 --- !u!4 &1465991657
 Transform:
   m_ObjectHideFlags: 0

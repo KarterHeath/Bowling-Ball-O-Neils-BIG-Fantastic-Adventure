@@ -1,4 +1,5 @@
 using UnityEngine;
+using UnityEngine.UI;
 
 public class SoundManager : MonoBehaviour
 {
@@ -8,6 +9,8 @@ public class SoundManager : MonoBehaviour
     private SoundLibrary sfxLibrary;
     [SerializeField]
     private AudioSource sfx2DSource;
+
+    [SerializeField] Slider volumeSlider;
 
     private void Awake()
     {
