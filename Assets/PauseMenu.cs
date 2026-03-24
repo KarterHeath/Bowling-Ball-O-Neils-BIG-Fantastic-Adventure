@@ -13,7 +13,8 @@ public class PauseMenu : MonoBehaviour
     public void Home()
     {
         SceneManager.LoadScene("Main Menu");
-        MusicManager.Instance.PlayMusic("Main Menu Theme");
+        MusicManager.Instance.PlayMusic("MainTheme");
+        Time.timeScale = 1; // Ensure the game is resumed when going back to the main menu
     }
     public void Resume()
     {

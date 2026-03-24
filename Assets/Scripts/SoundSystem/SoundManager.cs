@@ -10,7 +10,7 @@ public class SoundManager : MonoBehaviour
     [SerializeField]
     private AudioSource sfx2DSource;
 
-    [SerializeField] Slider volumeSlider;
+   
 
     private void Awake()
     {
