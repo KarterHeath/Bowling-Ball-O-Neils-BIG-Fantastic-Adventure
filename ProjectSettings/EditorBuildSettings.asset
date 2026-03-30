@@ -18,19 +18,19 @@ EditorBuildSettings:
     path: Assets/Scenes/Menu/Credits.unity
     guid: 9459572e8de64bc4eae2c548806a03ad
   - enabled: 1
-    path: Assets/Scenes/Levels/Level 1.unity
+    path: Assets/Scenes/Levels/Level1.unity
     guid: 3bc9d31bc3dff01418f93502e67cf542
   - enabled: 1
-    path: Assets/Scenes/Levels/Level 2.unity
+    path: Assets/Scenes/Levels/Level2.unity
     guid: e30c92d8a7cd81a4eb87b7ab09065876
   - enabled: 1
-    path: Assets/Scenes/Levels/Level 3.unity
+    path: Assets/Scenes/Levels/Level3.unity
     guid: 4fadeafeab75bbc44b88175b46d07bc1
   - enabled: 1
-    path: Assets/Scenes/Levels/Level 4.unity
+    path: Assets/Scenes/Levels/Level4.unity
     guid: c71163da70633c94db74dff72f86c38c
   - enabled: 1
-    path: Assets/Scenes/Levels/Level 5.unity
+    path: Assets/Scenes/Levels/Level5.unity
     guid: 5d4c3c1eb16e490418d1c8c8a7601e57
   - enabled: 1
     path: Assets/Scenes/Levels/Tavern End.unity

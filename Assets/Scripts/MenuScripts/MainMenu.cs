@@ -23,7 +23,18 @@ public class MainMenu : MonoBehaviour
     public void PlayGame()
     {
         SceneManager.LoadScene("Levels");
-
+        if (SceneManager.GetActiveScene().name == "Level1")
+            MusicManager.Instance.PlayMusic("Level1Theme");
+        if (SceneManager.GetActiveScene().name == "Level2")
+            MusicManager.Instance.PlayMusic("Level2Theme");
+        if (SceneManager.GetActiveScene().name == "Level3")
+            MusicManager.Instance.PlayMusic("Level3Theme");
+        if (SceneManager.GetActiveScene().name == "Level4")
+            MusicManager.Instance.PlayMusic("Level4Theme");
+        if (SceneManager.GetActiveScene().name == "Level5")
+            MusicManager.Instance.PlayMusic("Level5Theme");
+        if (SceneManager.GetActiveScene().name == "Tavern End")
+            MusicManager.Instance.PlayMusic("TavernEndTheme");
 
     }
     // Update is called once per frame

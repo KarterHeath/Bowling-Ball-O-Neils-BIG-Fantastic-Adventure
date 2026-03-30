@@ -5,7 +5,7 @@ public class LoadLevel3 : MonoBehaviour
 {
     void Start()
     {
-        if (MusicManager.Instance != null && SceneManager.GetActiveScene().name == "Level 3")
+        if (MusicManager.Instance != null && SceneManager.GetActiveScene().name == "Level3")
         {
             MusicManager.Instance.PlayMusic("Level3Theme");
         }
@@ -13,7 +13,7 @@ public class LoadLevel3 : MonoBehaviour
     public void LoadLevel()
     {
         MusicManager.Instance.PlayMusic("Level3Theme");
-        SceneManager.LoadScene("Level 3");
+        SceneManager.LoadScene("Level3");
 
     }
 }

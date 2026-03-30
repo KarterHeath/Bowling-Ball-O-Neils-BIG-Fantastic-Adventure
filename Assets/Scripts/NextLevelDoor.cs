@@ -27,17 +27,16 @@ public class NextLevelDoor : MonoBehaviour
         {
             SceneManager.LoadScene(currentSceneIndex + 1);
         }
-        else
-        {
-            Debug.Log("No more levels!");
-        }
+       
     }
     // Detect when the player enters or exits the trigger area
     private void OnTriggerEnter2D(Collider2D other)
     {
         if (other.CompareTag("Door"))
         {
+            UnlockNewLevel(); // Unlock the next level when the player enters the door trigger
             playerInRange = true;
+            SaveSystem.SavePlayer(Player.Instance); // Save player data after unlocking new level
         }
     }
 
@@ -48,5 +47,17 @@ public class NextLevelDoor : MonoBehaviour
             playerInRange = false;
         }
     }
+    void UnlockNewLevel()
+    {
+        if (SceneManager.GetActiveScene().buildIndex >= PlayerPrefs.GetInt("ReachedIndex"))
+        {
+            PlayerPrefs.SetInt("ReachedIndex", SceneManager.GetActiveScene().buildIndex + 1);
+            PlayerPrefs.SetInt("UnlockedLevel", PlayerPrefs.GetInt("UnlockedLevel", 1) + 1);
+            PlayerPrefs.Save();
+            Player.Instance.unlockedLevel++;
 
+            
+        }
+    }
 }
+

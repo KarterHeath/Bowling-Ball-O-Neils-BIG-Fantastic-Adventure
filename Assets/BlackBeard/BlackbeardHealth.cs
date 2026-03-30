@@ -1,8 +1,10 @@
 using UnityEngine;
 using System.Collections;
+using UnityEngine.SceneManagement;
 
 public class BlackbeardHealth : Health
 {
+    public AudioClip deathClip;
     private Blackbeard blackbeard;
 
     protected override void Awake()
@@ -43,6 +45,9 @@ public class BlackbeardHealth : Health
        
 
         // destroy after animation
-        Destroy(gameObject, 6f);
+        Destroy(gameObject, 6);
+        deathClip = blackbeard.deathClip;
+        SceneManager.LoadScene("Tavern End");
+        
     }
 }

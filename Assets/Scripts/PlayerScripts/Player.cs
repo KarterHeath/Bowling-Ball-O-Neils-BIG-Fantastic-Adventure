@@ -1,10 +1,11 @@
+using Unity.Android.Gradle.Manifest;
 using UnityEngine;
-using System.Collections;
-using System.Collections.Generic;
 
 public class Player : MonoBehaviour
 {
     public int coins;
+    public int unlockedLevel;
+    public int level;
     public static Player Instance { get; private set; }
 
     private void Awake()
@@ -26,15 +27,23 @@ public class Player : MonoBehaviour
         if (data != null)
         {
             coins = data.coins;
+            unlockedLevel = data.level;
         }
         else
         {
             coins = 0;
+            unlockedLevel = 1;
         }
-    }
-    void Update()
+
+    } 
+    public void SavePlayerData()
     {
-        // Player logic goes here
+        SaveSystem.SavePlayer(this);
+    }
+    public void LoadPlayer()
+    {
+        PlayerData data = SaveSystem.LoadPlayer();
+        level = data.level;
     }
 }
 

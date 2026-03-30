@@ -1961,6 +1961,8 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: Assembly-CSharp::MainMenu
   audioMixer: {fileID: 24100000, guid: e6f6011708ae97941aa3a0c2485e79a7, type: 2}
+  musicSlider: {fileID: 0}
+  sfxSlider: {fileID: 0}
 --- !u!114 &1624717840
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -2205,7 +2207,6 @@ MonoBehaviour:
   m_EditorClassIdentifier: Assembly-CSharp::SoundManager
   sfxLibrary: {fileID: 1749904885}
   sfx2DSource: {fileID: 1404174359}
-  volumeSlider: {fileID: 0}
 --- !u!4 &1749904887
 Transform:
   m_ObjectHideFlags: 0

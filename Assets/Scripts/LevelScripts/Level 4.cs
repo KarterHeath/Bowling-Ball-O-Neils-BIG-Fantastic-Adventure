@@ -5,7 +5,7 @@ public class LoadLevel4 : MonoBehaviour
 {
     void Start()
     {
-        if (MusicManager.Instance != null && SceneManager.GetActiveScene().name == "Level 4")
+        if (MusicManager.Instance != null && SceneManager.GetActiveScene().name == "Level4")
         {
             MusicManager.Instance.PlayMusic("Level4Theme");
         }
@@ -14,6 +14,6 @@ public class LoadLevel4 : MonoBehaviour
     {
         
         MusicManager.Instance.PlayMusic("Level4Theme");
-        SceneManager.LoadScene("Level 4");
+        SceneManager.LoadScene("Level4");
     }
 }

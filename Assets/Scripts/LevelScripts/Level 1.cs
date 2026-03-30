@@ -3,10 +3,11 @@ using UnityEngine.SceneManagement;
 
 public class LoadLevel : MonoBehaviour
 {
-    public void LoadLevel1()
+    private void Start()
     {
-        MusicManager.Instance.PlayMusic("Level1Theme");
-        SceneManager.LoadScene("Level 1");
-       
+        if (MusicManager.Instance != null && SceneManager.GetActiveScene().name == "Level1")
+        {
+            MusicManager.Instance.PlayMusic("Level1Theme");
+        }
     }
 }
