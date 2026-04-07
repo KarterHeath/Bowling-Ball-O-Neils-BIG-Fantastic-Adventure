@@ -7,17 +7,13 @@ using System.Collections.Generic;
 public class PlayerData
 {
     public int coins;
-    public int unlockedevel;
-     public int level
-    {
-        get { return unlockedevel; }
-        set { unlockedevel = value; }
-    }
 
+    public int level;
+    
     public PlayerData(Player player)
     {
         coins = player.coins;
-        level = player.unlockedLevel;
+        level = player.level;
     }
 
 }

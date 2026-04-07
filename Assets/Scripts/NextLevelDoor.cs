@@ -1,6 +1,6 @@
 using UnityEngine;
-using UnityEngine.SceneManagement;
 using UnityEngine.InputSystem;
+using UnityEngine.SceneManagement;
 
 public class NextLevelDoor : MonoBehaviour
 {
@@ -13,8 +13,8 @@ public class NextLevelDoor : MonoBehaviour
         // Only trigger when button is pressed (not released)
         if (context.isPressed && playerInRange)
         {
-            Player.Instance.coins = coinManager.coinCount; // Update player's coins before saving
-            SaveSystem.SavePlayer(Player.Instance); // Save player data before loading next level
+            Player.Instance.coins = coinManager.coinCount;// Update player's coins before saving
+            SaveSystem.SavePlayer(Player.Instance);
             LoadNextLevel();
         }
     }
@@ -27,7 +27,7 @@ public class NextLevelDoor : MonoBehaviour
         {
             SceneManager.LoadScene(currentSceneIndex + 1);
         }
-       
+
     }
     // Detect when the player enters or exits the trigger area
     private void OnTriggerEnter2D(Collider2D other)
@@ -49,14 +49,29 @@ public class NextLevelDoor : MonoBehaviour
     }
     void UnlockNewLevel()
     {
-        if (SceneManager.GetActiveScene().buildIndex >= PlayerPrefs.GetInt("ReachedIndex"))
+        switch (SceneManager.GetActiveScene().name)
         {
-            PlayerPrefs.SetInt("ReachedIndex", SceneManager.GetActiveScene().buildIndex + 1);
-            PlayerPrefs.SetInt("UnlockedLevel", PlayerPrefs.GetInt("UnlockedLevel", 1) + 1);
-            PlayerPrefs.Save();
-            Player.Instance.unlockedLevel++;
-
-            
+            case "Level1":
+                if (Player.Instance.level < 2)
+                    Player.Instance.level = 2;
+                // Unlock Level 2
+                break;
+            case "Level2":
+                if (Player.Instance.level < 3)
+                    Player.Instance.level = 3;
+                // Unlock Level 3
+                break;
+            case "Level3":
+                if (Player.Instance.level < 4)
+                    Player.Instance.level = 4;
+                // Unlock Level 4
+                break;
+            case "Level4":
+                if (Player.Instance.level < 5)
+                    Player.Instance.level = 5;
+                // Unlock Level 
+                break;
+                // Add more cases for additional levels
         }
     }
 }

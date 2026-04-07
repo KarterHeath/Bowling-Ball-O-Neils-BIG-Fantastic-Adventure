@@ -4,7 +4,6 @@ using UnityEngine;
 public class Player : MonoBehaviour
 {
     public int coins;
-    public int unlockedLevel;
     public int level;
     public static Player Instance { get; private set; }
 
@@ -27,12 +26,12 @@ public class Player : MonoBehaviour
         if (data != null)
         {
             coins = data.coins;
-            unlockedLevel = data.level;
+            level = data.level;
         }
         else
         {
             coins = 0;
-            unlockedLevel = 1;
+            level = 1;
         }
 
     } 

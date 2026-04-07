@@ -1529,6 +1529,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: Assembly-CSharp::Player
   coins: 0
+  level: 1
 --- !u!1 &1352296513
 GameObject:
   m_ObjectHideFlags: 0
@@ -2266,6 +2267,8 @@ MonoBehaviour:
     clip: {fileID: 8300000, guid: 50c528cc38d0ca244922661ae098663c, type: 3}
   - trackName: Level5Theme
     clip: {fileID: 8300000, guid: 788dbd107a849434c850a759b97691a2, type: 3}
+  - trackName: Tavern End
+    clip: {fileID: 8300000, guid: e4d1397a8b8880d46bde9f25de62bec2, type: 3}
 --- !u!114 &1850235338
 MonoBehaviour:
   m_ObjectHideFlags: 0

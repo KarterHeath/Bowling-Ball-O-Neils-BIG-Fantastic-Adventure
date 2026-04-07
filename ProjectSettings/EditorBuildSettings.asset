@@ -36,6 +36,9 @@ EditorBuildSettings:
     path: Assets/Scenes/Levels/Level5.unity
     guid: 5d4c3c1eb16e490418d1c8c8a7601e57
   - enabled: 1
+    path: Assets/Scenes/Cutscenes/Ending Cutscene.unity
+    guid: dd7972d5ff2e33641bed9b784aee830e
+  - enabled: 1
     path: Assets/Scenes/Levels/Tavern End.unity
     guid: 76337a2451b0e624c8a734805c754c40
   m_configObjects: {}
