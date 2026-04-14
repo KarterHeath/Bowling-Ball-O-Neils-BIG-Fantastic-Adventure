@@ -249,7 +249,7 @@ PrefabInstance:
       addedObject: {fileID: 4707987887669893554}
     - targetCorrespondingSourceObject: {fileID: -8653719598885068355, guid: 8889158ec959514479a7036c66a835a6, type: 3}
       insertIndex: -1
-      addedObject: {fileID: 3289521229002562966}
+      addedObject: {fileID: 2943057791489634501}
   m_SourcePrefab: {fileID: 4843985084834002234, guid: 8889158ec959514479a7036c66a835a6, type: 3}
 --- !u!1 &6773210953284441256 stripped
 GameObject:
@@ -386,11 +386,11 @@ MonoBehaviour:
   m_EditorClassIdentifier: Assembly-CSharp::EnemyAI
   pointA: {fileID: 0}
   pointB: {fileID: 0}
-  player: {fileID: 0}
+  player: {fileID: 7799874059527170314, guid: d0707b7011da9ba45980daadd05b42bc, type: 3}
   speed: 2
   chaseSpeed: 5
   detectionRange: 5
---- !u!114 &3289521229002562966
+--- !u!114 &2943057791489634501
 MonoBehaviour:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
@@ -399,10 +399,9 @@ MonoBehaviour:
   m_GameObject: {fileID: 6773210953284441256}
   m_Enabled: 1
   m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 2b47776628d1dfb49af59fd968f1a6ac, type: 3}
+  m_Script: {fileID: 11500000, guid: aaa94379ab5da2b4a92e80d2bb665877, type: 3}
   m_Name: 
-  m_EditorClassIdentifier: Assembly-CSharp::Health
+  m_EditorClassIdentifier: Assembly-CSharp::EnemyHealth
   startingHealth: 1
   iFramesDuration: 0
   numberOfFlashes: 0
-  deathSound: {fileID: 8300000, guid: e0a87a172c752b04ea45dfdf6a8420dc, type: 3}

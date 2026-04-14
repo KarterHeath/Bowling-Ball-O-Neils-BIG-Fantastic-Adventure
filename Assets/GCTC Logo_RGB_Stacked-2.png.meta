@@ -1,0 +1,271 @@
+fileFormatVersion: 2
+guid: bb35dba9e79fb1d4f9c5d4c3b6a6383d
+TextureImporter:
+  internalIDToNameTable:
+  - first:
+      213: -7830706067763043442
+    second: GCTC Logo_RGB_Stacked-2_0
+  - first:
+      213: -8569470306967753752
+    second: GCTC Logo_RGB_Stacked-2_1
+  - first:
+      213: -7454267393095205102
+    second: GCTC Logo_RGB_Stacked-2_2
+  - first:
+      213: 3065324030812421079
+    second: GCTC Logo_RGB_Stacked-2_3
+  - first:
+      213: 1897181910034953477
+    second: GCTC Logo_RGB_Stacked-2_4
+  - first:
+      213: -5056803440525753736
+    second: GCTC Logo_RGB_Stacked-2_5
+  - first:
+      213: 7289028356598730538
+    second: GCTC Logo_RGB_Stacked-2_6
+  - first:
+      213: -74925269730577996
+    second: GCTC Logo_RGB_Stacked-2_7
+  - first:
+      213: -1245110259420091412
+    second: GCTC Logo_RGB_Stacked-2_8
+  - first:
+      213: 2047303106684910839
+    second: GCTC Logo_RGB_Stacked-2_9
+  - first:
+      213: -8806250292030942662
+    second: GCTC Logo_RGB_Stacked-2_10
+  - first:
+      213: -8144906035911376838
+    second: GCTC Logo_RGB_Stacked-2_11
+  - first:
+      213: -5976773982070282383
+    second: GCTC Logo_RGB_Stacked-2_12
+  - first:
+      213: -1651519607886915591
+    second: GCTC Logo_RGB_Stacked-2_13
+  - first:
+      213: 2956740876554782014
+    second: GCTC Logo_RGB_Stacked-2_14
+  - first:
+      213: 2464055619497070588
+    second: GCTC Logo_RGB_Stacked-2_15
+  - first:
+      213: 6749297170472452193
+    second: GCTC Logo_RGB_Stacked-2_16
+  - first:
+      213: -8447144563278784784
+    second: GCTC Logo_RGB_Stacked-2_17
+  - first:
+      213: 2230650465530320520
+    second: GCTC Logo_RGB_Stacked-2_18
+  - first:
+      213: -1971684721809846612
+    second: GCTC Logo_RGB_Stacked-2_19
+  - first:
+      213: -6772445600354460869
+    second: GCTC Logo_RGB_Stacked-2_20
+  - first:
+      213: -97473310577234667
+    second: GCTC Logo_RGB_Stacked-2_21
+  - first:
+      213: 5385196580936186722
+    second: GCTC Logo_RGB_Stacked-2_22
+  - first:
+      213: 2426350091528094455
+    second: GCTC Logo_RGB_Stacked-2_23
+  - first:
+      213: 2008989757827222275
+    second: GCTC Logo_RGB_Stacked-2_24
+  - first:
+      213: 8064308951988599299
+    second: GCTC Logo_RGB_Stacked-2_25
+  - first:
+      213: -7326452373519190829
+    second: GCTC Logo_RGB_Stacked-2_26
+  - first:
+      213: 2789060004185223402
+    second: GCTC Logo_RGB_Stacked-2_27
+  - first:
+      213: 5430518567183013662
+    second: GCTC Logo_RGB_Stacked-2_28
+  - first:
+      213: -1280043231331322981
+    second: GCTC Logo_RGB_Stacked-2_29
+  externalObjects: {}
+  serializedVersion: 13
+  mipmaps:
+    mipMapMode: 0
+    enableMipMap: 0
+    sRGBTexture: 1
+    linearTexture: 0
+    fadeOut: 0
+    borderMipMap: 0
+    mipMapsPreserveCoverage: 0
+    alphaTestReferenceValue: 0.5
+    mipMapFadeDistanceStart: 1
+    mipMapFadeDistanceEnd: 3
+  bumpmap:
+    convertToNormalMap: 0
+    externalNormalMap: 0
+    heightScale: 0.25
+    normalMapFilter: 0
+    flipGreenChannel: 0
+  isReadable: 0
+  streamingMipmaps: 0
+  streamingMipmapsPriority: 0
+  vTOnly: 0
+  ignoreMipmapLimit: 0
+  grayScaleToAlpha: 0
+  generateCubemap: 6
+  cubemapConvolution: 0
+  seamlessCubemap: 0
+  textureFormat: 1
+  maxTextureSize: 2048
+  textureSettings:
+    serializedVersion: 2
+    filterMode: 1
+    aniso: 1
+    mipBias: 0
+    wrapU: 1
+    wrapV: 1
+    wrapW: 1
+  nPOTScale: 0
+  lightmap: 0
+  compressionQuality: 50
+  spriteMode: 2
+  spriteExtrude: 1
+  spriteMeshType: 1
+  alignment: 0
+  spritePivot: {x: 0.5, y: 0.5}
+  spritePixelsToUnits: 100
+  spriteBorder: {x: 0, y: 0, z: 0, w: 0}
+  spriteGenerateFallbackPhysicsShape: 1
+  alphaUsage: 1
+  alphaIsTransparency: 1
+  spriteTessellationDetail: -1
+  textureType: 8
+  textureShape: 1
+  singleChannelComponent: 0
+  flipbookRows: 1
+  flipbookColumns: 1
+  maxTextureSizeSet: 0
+  compressionQualitySet: 0
+  textureFormatSet: 0
+  ignorePngGamma: 0
+  applyGammaDecoding: 0
+  swizzle: 50462976
+  cookieLightType: 0
+  platformSettings:
+  - serializedVersion: 4
+    buildTarget: DefaultTexturePlatform
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    ignorePlatformSupport: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  - serializedVersion: 4
+    buildTarget: Standalone
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    ignorePlatformSupport: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  - serializedVersion: 4
+    buildTarget: Android
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    ignorePlatformSupport: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  - serializedVersion: 4
+    buildTarget: WebGL
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    ignorePlatformSupport: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  - serializedVersion: 4
+    buildTarget: WindowsStoreApps
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    ignorePlatformSupport: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  spriteSheet:
+    serializedVersion: 2
+    sprites:
+    - serializedVersion: 2
+      name: GCTC Logo_RGB_Stacked-2_0
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 0
+        width: 1299
+        height: 702
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: e83ec7af15eb35390800000000000000
+      internalID: -7830706067763043442
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    outline: []
+    customData: 
+    physicsShape: []
+    bones: []
+    spriteID: 55360a8fd4b291448ba48f6ae1ba94b6
+    internalID: 0
+    vertices: []
+    indices: 
+    edges: []
+    weights: []
+    secondaryTextures: []
+    spriteCustomMetadata:
+      entries:
+      - key: SpriteEditor.SliceSettings
+        value: '{"sliceOnImport":false,"gridCellCount":{"x":1.0,"y":1.0},"gridSpriteSize":{"x":1299.0,"y":702.0},"gridSpriteOffset":{"x":0.0,"y":0.0},"gridSpritePadding":{"x":0.0,"y":0.0},"pivot":{"x":0.5,"y":0.5},"pivotPixels":{"x":0.0,"y":0.0},"autoSlicingMethod":0,"spriteAlignment":0,"pivotUnitMode":0,"slicingType":2,"keepEmptyRects":false,"isAlternate":false}'
+    nameFileIdTable:
+      GCTC Logo_RGB_Stacked-2_0: -7830706067763043442
+  mipmapLimitGroupName: 
+  pSDRemoveMatte: 0
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 

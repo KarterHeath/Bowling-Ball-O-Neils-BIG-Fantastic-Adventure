@@ -1,0 +1,576 @@
+fileFormatVersion: 2
+guid: be11417d902a12a4283ba6fe00ea9ec5
+TextureImporter:
+  internalIDToNameTable:
+  - first:
+      213: -5301656230553883305
+    second: BlackBeard DIE_0
+  - first:
+      213: 9112490487241485886
+    second: BlackBeard DIE_1
+  - first:
+      213: 5091260585213588320
+    second: BlackBeard DIE_2
+  - first:
+      213: 6379572500675094283
+    second: BlackBeard DIE_3
+  - first:
+      213: -2443324589894403637
+    second: BlackBeard DIE_4
+  - first:
+      213: 1394634088391929588
+    second: BlackBeard DIE_5
+  - first:
+      213: 1353466869690687796
+    second: BlackBeard DIE_6
+  - first:
+      213: -654103054548023273
+    second: BlackBeard DIE_7
+  - first:
+      213: 742363023409862988
+    second: BlackBeard DIE_8
+  - first:
+      213: -6545241903863268748
+    second: BlackBeard DIE_9
+  - first:
+      213: 9146533892682555972
+    second: BlackBeard DIE_10
+  - first:
+      213: -1353882246599450709
+    second: BlackBeard DIE_11
+  - first:
+      213: 6041737335536823088
+    second: BlackBeard DIE_12
+  - first:
+      213: 1810403265126067257
+    second: BlackBeard DIE_13
+  - first:
+      213: 1297801443524491982
+    second: BlackBeard DIE_14
+  - first:
+      213: 7755575766769192240
+    second: BlackBeard DIE_15
+  - first:
+      213: 5010950325435094752
+    second: BlackBeard DIE_16
+  - first:
+      213: -1020654174421986639
+    second: BlackBeard DIE_17
+  - first:
+      213: 6760719048837457491
+    second: BlackBeard DIE_18
+  - first:
+      213: 8782131640621368002
+    second: BlackBeard DIE_19
+  - first:
+      213: 4140928566962576973
+    second: BlackBeard DIE_20
+  - first:
+      213: 1676633333382197399
+    second: BlackBeard DIE_21
+  externalObjects: {}
+  serializedVersion: 13
+  mipmaps:
+    mipMapMode: 0
+    enableMipMap: 0
+    sRGBTexture: 1
+    linearTexture: 0
+    fadeOut: 0
+    borderMipMap: 0
+    mipMapsPreserveCoverage: 0
+    alphaTestReferenceValue: 0.5
+    mipMapFadeDistanceStart: 1
+    mipMapFadeDistanceEnd: 3
+  bumpmap:
+    convertToNormalMap: 0
+    externalNormalMap: 0
+    heightScale: 0.25
+    normalMapFilter: 0
+    flipGreenChannel: 0
+  isReadable: 0
+  streamingMipmaps: 0
+  streamingMipmapsPriority: 0
+  vTOnly: 0
+  ignoreMipmapLimit: 0
+  grayScaleToAlpha: 0
+  generateCubemap: 6
+  cubemapConvolution: 0
+  seamlessCubemap: 0
+  textureFormat: 1
+  maxTextureSize: 2048
+  textureSettings:
+    serializedVersion: 2
+    filterMode: 1
+    aniso: 1
+    mipBias: 0
+    wrapU: 1
+    wrapV: 1
+    wrapW: 1
+  nPOTScale: 0
+  lightmap: 0
+  compressionQuality: 50
+  spriteMode: 2
+  spriteExtrude: 1
+  spriteMeshType: 1
+  alignment: 0
+  spritePivot: {x: 0.5, y: 0.5}
+  spritePixelsToUnits: 100
+  spriteBorder: {x: 0, y: 0, z: 0, w: 0}
+  spriteGenerateFallbackPhysicsShape: 1
+  alphaUsage: 1
+  alphaIsTransparency: 1
+  spriteTessellationDetail: -1
+  textureType: 8
+  textureShape: 1
+  singleChannelComponent: 0
+  flipbookRows: 1
+  flipbookColumns: 1
+  maxTextureSizeSet: 0
+  compressionQualitySet: 0
+  textureFormatSet: 0
+  ignorePngGamma: 0
+  applyGammaDecoding: 0
+  swizzle: 50462976
+  cookieLightType: 0
+  platformSettings:
+  - serializedVersion: 4
+    buildTarget: DefaultTexturePlatform
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    ignorePlatformSupport: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  - serializedVersion: 4
+    buildTarget: Standalone
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    ignorePlatformSupport: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  - serializedVersion: 4
+    buildTarget: Android
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    ignorePlatformSupport: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  - serializedVersion: 4
+    buildTarget: WebGL
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    ignorePlatformSupport: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  - serializedVersion: 4
+    buildTarget: WindowsStoreApps
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    ignorePlatformSupport: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  spriteSheet:
+    serializedVersion: 2
+    sprites:
+    - serializedVersion: 2
+      name: BlackBeard DIE_0
+      rect:
+        serializedVersion: 2
+        x: 2929
+        y: 6099
+        width: 32
+        height: 32
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 75d69986fbbbc66b0800000000000000
+      internalID: -5301656230553883305
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: BlackBeard DIE_1
+      rect:
+        serializedVersion: 2
+        x: 3209
+        y: 6069
+        width: 32
+        height: 32
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: e3ea72f61d1167e70800000000000000
+      internalID: 9112490487241485886
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: BlackBeard DIE_2
+      rect:
+        serializedVersion: 2
+        x: 529
+        y: 4909
+        width: 1132
+        height: 1182
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 0637a90178ac7a640800000000000000
+      internalID: 5091260585213588320
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: BlackBeard DIE_3
+      rect:
+        serializedVersion: 2
+        x: 2919
+        y: 6029
+        width: 32
+        height: 32
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: b07e691936bc88850800000000000000
+      internalID: 6379572500675094283
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: BlackBeard DIE_4
+      rect:
+        serializedVersion: 2
+        x: 3179
+        y: 6029
+        width: 32
+        height: 32
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: bc9fd541b31971ed0800000000000000
+      internalID: -2443324589894403637
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: BlackBeard DIE_6
+      rect:
+        serializedVersion: 2
+        x: 2919
+        y: 5979
+        width: 32
+        height: 32
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 4316c2f62fa78c210800000000000000
+      internalID: 1353466869690687796
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: BlackBeard DIE_7
+      rect:
+        serializedVersion: 2
+        x: 3159
+        y: 5979
+        width: 32
+        height: 32
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 718ca2bccb82ce6f0800000000000000
+      internalID: -654103054548023273
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: BlackBeard DIE_9
+      rect:
+        serializedVersion: 2
+        x: 2919
+        y: 5929
+        width: 32
+        height: 32
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 47a7a37aa21aa25a0800000000000000
+      internalID: -6545241903863268748
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: BlackBeard DIE_10
+      rect:
+        serializedVersion: 2
+        x: 3149
+        y: 5939
+        width: 32
+        height: 32
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 4422a6f6d140fee70800000000000000
+      internalID: 9146533892682555972
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: BlackBeard DIE_11
+      rect:
+        serializedVersion: 2
+        x: 4609
+        y: 4999
+        width: 1979
+        height: 1037
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: baf5bb7154b063de0800000000000000
+      internalID: -1353882246599450709
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: BlackBeard DIE_12
+      rect:
+        serializedVersion: 2
+        x: 2489
+        y: 4919
+        width: 1647
+        height: 1409
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 03b23ee981098d350800000000000000
+      internalID: 6041737335536823088
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: BlackBeard DIE_13
+      rect:
+        serializedVersion: 2
+        x: 209
+        y: 2662
+        width: 1979
+        height: 1442
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 93ceb0e7d28df1910800000000000000
+      internalID: 1810403265126067257
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: BlackBeard DIE_15
+      rect:
+        serializedVersion: 2
+        x: 2338
+        y: 2829
+        width: 1924
+        height: 1039
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 03dc7eea11751ab60800000000000000
+      internalID: 7755575766769192240
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: BlackBeard DIE_17
+      rect:
+        serializedVersion: 2
+        x: 4357
+        y: 2719
+        width: 2243
+        height: 1323
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 1b2de0f9f68e5d1f0800000000000000
+      internalID: -1020654174421986639
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: BlackBeard DIE_20
+      rect:
+        serializedVersion: 2
+        x: 20
+        y: 406
+        width: 2594
+        height: 1033
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: d4e52129798877930800000000000000
+      internalID: 4140928566962576973
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    outline: []
+    customData: 
+    physicsShape: []
+    bones: []
+    spriteID: dfa1737996adcdf4084734b392f94dd7
+    internalID: 0
+    vertices: []
+    indices: 
+    edges: []
+    weights: []
+    secondaryTextures: []
+    spriteCustomMetadata:
+      entries:
+      - key: SpriteEditor.SliceSettings
+        value: '{"sliceOnImport":false,"gridCellCount":{"x":1.0,"y":1.0},"gridSpriteSize":{"x":64.0,"y":64.0},"gridSpriteOffset":{"x":0.0,"y":0.0},"gridSpritePadding":{"x":0.0,"y":0.0},"pivot":{"x":0.5,"y":0.5},"pivotPixels":{"x":0.0,"y":0.0},"autoSlicingMethod":0,"spriteAlignment":0,"pivotUnitMode":0,"slicingType":0,"keepEmptyRects":false,"isAlternate":false}'
+    nameFileIdTable:
+      BlackBeard DIE_0: -5301656230553883305
+      BlackBeard DIE_1: 9112490487241485886
+      BlackBeard DIE_10: 9146533892682555972
+      BlackBeard DIE_11: -1353882246599450709
+      BlackBeard DIE_12: 6041737335536823088
+      BlackBeard DIE_13: 1810403265126067257
+      BlackBeard DIE_14: 1297801443524491982
+      BlackBeard DIE_15: 7755575766769192240
+      BlackBeard DIE_16: 5010950325435094752
+      BlackBeard DIE_17: -1020654174421986639
+      BlackBeard DIE_18: 6760719048837457491
+      BlackBeard DIE_19: 8782131640621368002
+      BlackBeard DIE_2: 5091260585213588320
+      BlackBeard DIE_20: 4140928566962576973
+      BlackBeard DIE_21: 1676633333382197399
+      BlackBeard DIE_3: 6379572500675094283
+      BlackBeard DIE_4: -2443324589894403637
+      BlackBeard DIE_5: 1394634088391929588
+      BlackBeard DIE_6: 1353466869690687796
+      BlackBeard DIE_7: -654103054548023273
+      BlackBeard DIE_8: 742363023409862988
+      BlackBeard DIE_9: -6545241903863268748
+  mipmapLimitGroupName: 
+  pSDRemoveMatte: 0
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 
