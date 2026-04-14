@@ -2565,6 +2565,17 @@ Transform:
   m_CorrespondingSourceObject: {fileID: 8145705020636452613, guid: 2f14ddd87e8883047bc97c46fedcb6a5, type: 3}
   m_PrefabInstance: {fileID: 630068716}
   m_PrefabAsset: {fileID: 0}
+--- !u!114 &588883011 stripped
+MonoBehaviour:
+  m_CorrespondingSourceObject: {fileID: 9207760575939040660, guid: 610a74a9705e9ad4d87e77074814652c, type: 3}
+  m_PrefabInstance: {fileID: 5073889997915262023}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: eb7052d2ee93a4e49b1b3e2bec8af3c7, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: Assembly-CSharp::PauseMenu
 --- !u!1 &605281961
 GameObject:
   m_ObjectHideFlags: 0
@@ -3621,10 +3632,6 @@ PrefabInstance:
       propertyPath: 'fireballs.Array.data[9]'
       value: 
       objectReference: {fileID: 637764970}
-    - target: {fileID: 6368718978714613608, guid: d0707b7011da9ba45980daadd05b42bc, type: 3}
-      propertyPath: m_Camera
-      value: 
-      objectReference: {fileID: 1614929969}
     - target: {fileID: 7799874059527170314, guid: d0707b7011da9ba45980daadd05b42bc, type: 3}
       propertyPath: m_LocalPosition.x
       value: -45.6
@@ -3665,6 +3672,10 @@ PrefabInstance:
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
       objectReference: {fileID: 0}
+    - target: {fileID: 7848681247848063665, guid: d0707b7011da9ba45980daadd05b42bc, type: 3}
+      propertyPath: pauseMenu
+      value: 
+      objectReference: {fileID: 588883011}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
     m_AddedGameObjects: []
@@ -5080,7 +5091,7 @@ MonoBehaviour:
   m_SendPointerHoverToParent: 1
   m_MoveRepeatDelay: 0.5
   m_MoveRepeatRate: 0.1
-  m_XRTrackingOrigin: {fileID: 0}
+  m_XRTrackingOrigin: {fileID: 2080037565}
   m_ActionsAsset: {fileID: -944628639613478452, guid: ca9f5fa95ffab41fb9a615ab714db018, type: 3}
   m_PointAction: {fileID: -1654692200621890270, guid: ca9f5fa95ffab41fb9a615ab714db018, type: 3}
   m_MoveAction: {fileID: -8784545083839296357, guid: ca9f5fa95ffab41fb9a615ab714db018, type: 3}
@@ -5108,7 +5119,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 76c392e42b5098c458856cdf6ecaaaa1, type: 3}
   m_Name: 
   m_EditorClassIdentifier: UnityEngine.UI::UnityEngine.EventSystems.EventSystem
-  m_FirstSelected: {fileID: 0}
+  m_FirstSelected: {fileID: 2080037564}
   m_sendNavigationEvents: 1
   m_DragThreshold: 10
 --- !u!4 &1133102107
@@ -5235,13 +5246,13 @@ AudioSource:
   m_audioClip: {fileID: 0}
   m_Resource: {fileID: 8300000, guid: 4a5c1cc930878e844b334c235473785c, type: 3}
   m_PlayOnAwake: 0
-  m_Volume: 0.518
+  m_Volume: 0.864
   m_Pitch: 1
   Loop: 0
   Mute: 0
   Spatialize: 0
   SpatializePostEffects: 0
-  Priority: 128
+  Priority: 129
   DopplerLevel: 1
   MinDistance: 1
   MaxDistance: 500
@@ -10419,6 +10430,16 @@ SpriteRenderer:
   m_SpriteTileMode: 0
   m_WasSpriteAssigned: 1
   m_SpriteSortPoint: 0
+--- !u!1 &2080037564 stripped
+GameObject:
+  m_CorrespondingSourceObject: {fileID: 7613311116191576302, guid: 610a74a9705e9ad4d87e77074814652c, type: 3}
+  m_PrefabInstance: {fileID: 5073889997915262023}
+  m_PrefabAsset: {fileID: 0}
+--- !u!224 &2080037565 stripped
+RectTransform:
+  m_CorrespondingSourceObject: {fileID: 1581305180603405622, guid: 610a74a9705e9ad4d87e77074814652c, type: 3}
+  m_PrefabInstance: {fileID: 5073889997915262023}
+  m_PrefabAsset: {fileID: 0}
 --- !u!1 &2093154623
 GameObject:
   m_ObjectHideFlags: 0

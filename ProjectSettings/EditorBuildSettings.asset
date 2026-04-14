@@ -41,5 +41,9 @@ EditorBuildSettings:
   - enabled: 1
     path: Assets/Scenes/Levels/Tavern End.unity
     guid: 76337a2451b0e624c8a734805c754c40
-  m_configObjects: {}
+  - enabled: 1
+    path: Assets/Post Credit Scene.unity
+    guid: 8713165d3d9cc12408d40f45a8dfb4d4
+  m_configObjects:
+    com.unity.input.settings: {fileID: 11400000, guid: a17088dcb0494894e9c568570b6e67cf, type: 2}
   m_UseUCBPForAssetBundles: 0

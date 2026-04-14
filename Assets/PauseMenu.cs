@@ -1,14 +1,17 @@
 using UnityEngine;
+using UnityEngine.EventSystems;
 using UnityEngine.SceneManagement;
 using UnityEngine.UI;
 public class PauseMenu : MonoBehaviour
 // This script is responsible for handling the pause menu functionality, including pausing the game, resuming the game, and navigating back to the main menu.
 {
+    public GameObject resumeButton;
     [SerializeField] GameObject pauseMenu;
     public void Pause()
     {
         pauseMenu.SetActive(true);
         Time.timeScale = 0; // Pause the game by setting time scale to 0
+        EventSystem.current.SetSelectedGameObject(resumeButton);
     }
     public void Home()
     {
@@ -21,4 +24,5 @@ public class PauseMenu : MonoBehaviour
         pauseMenu.SetActive(false);
         Time.timeScale = 1; // Resume the game by setting time scale back to 1
     }
+   
 }

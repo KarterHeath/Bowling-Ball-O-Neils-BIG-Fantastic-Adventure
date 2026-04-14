@@ -26,6 +26,14 @@ public class PlayerMovement : MonoBehaviour
 
     private void Update()
     {
+        if (Gamepad.current != null)
+        {
+            speed=15f;
+        }
+        else
+        {
+            speed=10f;
+        }
         //horizontalInput = Input.GetAxis("Horizontal");
 
         //Flip player when moving left-right

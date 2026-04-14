@@ -1661,6 +1661,14 @@ PrefabInstance:
     serializedVersion: 3
     m_TransformParent: {fileID: 0}
     m_Modifications:
+    - target: {fileID: 1730859369670008547, guid: b1887022ce9bcae4ca8f012aad74568d, type: 3}
+      propertyPath: playerAttack
+      value: 
+      objectReference: {fileID: 1332838016}
+    - target: {fileID: 1730859369670008547, guid: b1887022ce9bcae4ca8f012aad74568d, type: 3}
+      propertyPath: starterAssetsInputs
+      value: 
+      objectReference: {fileID: 1332838018}
     - target: {fileID: 7082088370868643235, guid: b1887022ce9bcae4ca8f012aad74568d, type: 3}
       propertyPath: m_Name
       value: UI_Canvas_StarterAssetsInputs_Joysticks
@@ -2582,6 +2590,17 @@ PrefabInstance:
     m_AddedGameObjects: []
     m_AddedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 2f14ddd87e8883047bc97c46fedcb6a5, type: 3}
+--- !u!114 &617437501 stripped
+MonoBehaviour:
+  m_CorrespondingSourceObject: {fileID: 9207760575939040660, guid: 610a74a9705e9ad4d87e77074814652c, type: 3}
+  m_PrefabInstance: {fileID: 27304}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: eb7052d2ee93a4e49b1b3e2bec8af3c7, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: Assembly-CSharp::PauseMenu
 --- !u!1 &637764970 stripped
 GameObject:
   m_CorrespondingSourceObject: {fileID: 673358528545752080, guid: 3b467cda93fd3264fae09300561873f8, type: 3}
@@ -3450,6 +3469,10 @@ PrefabInstance:
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
       objectReference: {fileID: 0}
+    - target: {fileID: 7848681247848063665, guid: d0707b7011da9ba45980daadd05b42bc, type: 3}
+      propertyPath: pauseMenu
+      value: 
+      objectReference: {fileID: 617437501}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
     m_AddedGameObjects: []
@@ -4640,7 +4663,7 @@ AudioSource:
   m_audioClip: {fileID: 0}
   m_Resource: {fileID: 8300000, guid: 47c1163523e37214a909bbe5af42b028, type: 3}
   m_PlayOnAwake: 0
-  m_Volume: 0.518
+  m_Volume: 0.834
   m_Pitch: 1
   Loop: 0
   Mute: 0
@@ -5592,6 +5615,28 @@ Transform:
   m_Children: []
   m_Father: {fileID: 1113506045}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!114 &1332838016 stripped
+MonoBehaviour:
+  m_CorrespondingSourceObject: {fileID: 6280406641584206096, guid: d0707b7011da9ba45980daadd05b42bc, type: 3}
+  m_PrefabInstance: {fileID: 818551449}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 1ba7865c40a733745af601f181c2a22f, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+--- !u!114 &1332838018 stripped
+MonoBehaviour:
+  m_CorrespondingSourceObject: {fileID: 4846475197738765800, guid: d0707b7011da9ba45980daadd05b42bc, type: 3}
+  m_PrefabInstance: {fileID: 818551449}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: c095e073633f45842a87100844278b3c, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
 --- !u!1001 &1349823114
 PrefabInstance:
   m_ObjectHideFlags: 0

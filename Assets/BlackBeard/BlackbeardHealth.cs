@@ -47,7 +47,7 @@ public class BlackbeardHealth : Health
         // destroy after animation
         Destroy(gameObject, 6);
         deathClip = blackbeard.deathClip;
-        SceneManager.LoadScene("Tavern End");
+        SceneManager.LoadScene("Ending Cutscene");
         
     }
 }
