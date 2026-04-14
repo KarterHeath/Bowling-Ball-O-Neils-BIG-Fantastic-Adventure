@@ -7634,38 +7634,6 @@ PrefabInstance:
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
       objectReference: {fileID: 0}
-    - target: {fileID: 4104207252963368018, guid: 76615f2d04e5c5a489539ededca6fa4c, type: 3}
-      propertyPath: m_AnchorMax.x
-      value: 0
-      objectReference: {fileID: 0}
-    - target: {fileID: 4104207252963368018, guid: 76615f2d04e5c5a489539ededca6fa4c, type: 3}
-      propertyPath: m_AnchorMax.y
-      value: 1
-      objectReference: {fileID: 0}
-    - target: {fileID: 4104207252963368018, guid: 76615f2d04e5c5a489539ededca6fa4c, type: 3}
-      propertyPath: m_AnchorMin.x
-      value: 0
-      objectReference: {fileID: 0}
-    - target: {fileID: 4104207252963368018, guid: 76615f2d04e5c5a489539ededca6fa4c, type: 3}
-      propertyPath: m_AnchorMin.y
-      value: 1
-      objectReference: {fileID: 0}
-    - target: {fileID: 4104207252963368018, guid: 76615f2d04e5c5a489539ededca6fa4c, type: 3}
-      propertyPath: m_SizeDelta.x
-      value: 375.6014
-      objectReference: {fileID: 0}
-    - target: {fileID: 4104207252963368018, guid: 76615f2d04e5c5a489539ededca6fa4c, type: 3}
-      propertyPath: m_SizeDelta.y
-      value: 79.2669
-      objectReference: {fileID: 0}
-    - target: {fileID: 4104207252963368018, guid: 76615f2d04e5c5a489539ededca6fa4c, type: 3}
-      propertyPath: m_AnchoredPosition.x
-      value: 1700.3
-      objectReference: {fileID: 0}
-    - target: {fileID: 4104207252963368018, guid: 76615f2d04e5c5a489539ededca6fa4c, type: 3}
-      propertyPath: m_AnchoredPosition.y
-      value: -49.633423
-      objectReference: {fileID: 0}
     - target: {fileID: 7183287516262500044, guid: 76615f2d04e5c5a489539ededca6fa4c, type: 3}
       propertyPath: m_Name
       value: UICanvas
